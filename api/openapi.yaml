@@ -1,0 +1,3598 @@
+openapi: 3.0.2
+info:
+  description: OpenAPI 3 - Documentation of DFIRTrack API
+  title: DFIRTrack
+  version: 0.4.1
+servers:
+- url: /
+security:
+- BasicAuth: []
+paths:
+  /api/artifact/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listArtifacts
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Artifact'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createArtifact
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifact'
+      tags:
+      - api
+  /api/artifact/{artifact_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveArtifact
+      parameters:
+      - description: A unique integer value identifying this artifact.
+        explode: false
+        in: path
+        name: artifact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifact'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateArtifact
+      parameters:
+      - description: A unique integer value identifying this artifact.
+        explode: false
+        in: path
+        name: artifact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifact'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateArtifact
+      parameters:
+      - description: A unique integer value identifying this artifact.
+        explode: false
+        in: path
+        name: artifact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifact'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifact'
+      tags:
+      - api
+  /api/artifactstatus/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listArtifactstatus
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Artifactstatus'
+                type: array
+      tags:
+      - api
+  /api/artifactstatus/{artifactstatus_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveArtifactstatus
+      parameters:
+      - description: A unique integer value identifying this artifactstatus.
+        explode: false
+        in: path
+        name: artifactstatus_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifactstatus'
+      tags:
+      - api
+  /api/artifacttype/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listArtifacttypes
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Artifacttype'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createArtifacttype
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifacttype'
+      tags:
+      - api
+  /api/artifacttype/{artifacttype_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveArtifacttype
+      parameters:
+      - description: A unique integer value identifying this artifacttype.
+        explode: false
+        in: path
+        name: artifacttype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifacttype'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateArtifacttype
+      parameters:
+      - description: A unique integer value identifying this artifacttype.
+        explode: false
+        in: path
+        name: artifacttype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifacttype'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateArtifacttype
+      parameters:
+      - description: A unique integer value identifying this artifacttype.
+        explode: false
+        in: path
+        name: artifacttype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Artifacttype'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artifacttype'
+      tags:
+      - api
+  /api/analysisstatus/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listAnalysisstatus
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Analysisstatus'
+                type: array
+      tags:
+      - api
+  /api/analysisstatus/{analysisstatus_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveAnalysisstatus
+      parameters:
+      - description: A unique integer value identifying this analysisstatus.
+        explode: false
+        in: path
+        name: analysisstatus_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Analysisstatus'
+      tags:
+      - api
+  /api/case/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listCases
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Case'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createCase
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Case'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Case'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Case'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Case'
+      tags:
+      - api
+  /api/case/{case_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveCase
+      parameters:
+      - description: A unique integer value identifying this case.
+        explode: false
+        in: path
+        name: case_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Case'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateCase
+      parameters:
+      - description: A unique integer value identifying this case.
+        explode: false
+        in: path
+        name: case_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Case'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Case'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Case'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Case'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateCase
+      parameters:
+      - description: A unique integer value identifying this case.
+        explode: false
+        in: path
+        name: case_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Case'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Case'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Case'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Case'
+      tags:
+      - api
+  /api/company/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listCompanys
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Company'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createCompany
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Company'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Company'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Company'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+      tags:
+      - api
+  /api/company/{company_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveCompany
+      parameters:
+      - description: A unique integer value identifying this company.
+        explode: false
+        in: path
+        name: company_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateCompany
+      parameters:
+      - description: A unique integer value identifying this company.
+        explode: false
+        in: path
+        name: company_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Company'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Company'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Company'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateCompany
+      parameters:
+      - description: A unique integer value identifying this company.
+        explode: false
+        in: path
+        name: company_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Company'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Company'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Company'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+      tags:
+      - api
+  /api/contact/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listContacts
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Contact'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createContact
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Contact'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+      tags:
+      - api
+  /api/contact/{contact_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveContact
+      parameters:
+      - description: A unique integer value identifying this contact.
+        explode: false
+        in: path
+        name: contact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateContact
+      parameters:
+      - description: A unique integer value identifying this contact.
+        explode: false
+        in: path
+        name: contact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Contact'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateContact
+      parameters:
+      - description: A unique integer value identifying this contact.
+        explode: false
+        in: path
+        name: contact_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Contact'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Contact'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+      tags:
+      - api
+  /api/division/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listDivisions
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Division'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createDivision
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Division'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Division'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Division'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Division'
+      tags:
+      - api
+  /api/division/{division_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveDivision
+      parameters:
+      - description: A unique integer value identifying this division.
+        explode: false
+        in: path
+        name: division_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Division'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateDivision
+      parameters:
+      - description: A unique integer value identifying this division.
+        explode: false
+        in: path
+        name: division_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Division'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Division'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Division'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Division'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateDivision
+      parameters:
+      - description: A unique integer value identifying this division.
+        explode: false
+        in: path
+        name: division_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Division'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Division'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Division'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Division'
+      tags:
+      - api
+  /api/dnsname/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listDnsnames
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Dnsname'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createDnsname
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dnsname'
+      tags:
+      - api
+  /api/dnsname/{dnsname_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveDnsname
+      parameters:
+      - description: A unique integer value identifying this dnsname.
+        explode: false
+        in: path
+        name: dnsname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dnsname'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateDnsname
+      parameters:
+      - description: A unique integer value identifying this dnsname.
+        explode: false
+        in: path
+        name: dnsname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dnsname'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateDnsname
+      parameters:
+      - description: A unique integer value identifying this dnsname.
+        explode: false
+        in: path
+        name: dnsname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Dnsname'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dnsname'
+      tags:
+      - api
+  /api/domain/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listDomains
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Domain'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createDomain
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domain'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domain'
+      tags:
+      - api
+  /api/domain/{domain_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveDomain
+      parameters:
+      - description: A unique integer value identifying this domain.
+        explode: false
+        in: path
+        name: domain_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domain'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateDomain
+      parameters:
+      - description: A unique integer value identifying this domain.
+        explode: false
+        in: path
+        name: domain_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domain'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domain'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateDomain
+      parameters:
+      - description: A unique integer value identifying this domain.
+        explode: false
+        in: path
+        name: domain_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domain'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domain'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domain'
+      tags:
+      - api
+  /api/domainuser/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listDomainusers
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Domainuser'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createDomainuser
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domainuser'
+      tags:
+      - api
+  /api/domainuser/{domainuser_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveDomainuser
+      parameters:
+      - description: A unique integer value identifying this domainuser.
+        explode: false
+        in: path
+        name: domainuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domainuser'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateDomainuser
+      parameters:
+      - description: A unique integer value identifying this domainuser.
+        explode: false
+        in: path
+        name: domainuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domainuser'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateDomainuser
+      parameters:
+      - description: A unique integer value identifying this domainuser.
+        explode: false
+        in: path
+        name: domainuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Domainuser'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Domainuser'
+      tags:
+      - api
+  /api/ip/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listIps
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Ip'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createIp
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ip'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ip'
+      tags:
+      - api
+  /api/ip/{ip_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveIp
+      parameters:
+      - description: A unique integer value identifying this ip.
+        explode: false
+        in: path
+        name: ip_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ip'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateIp
+      parameters:
+      - description: A unique integer value identifying this ip.
+        explode: false
+        in: path
+        name: ip_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ip'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ip'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateIp
+      parameters:
+      - description: A unique integer value identifying this ip.
+        explode: false
+        in: path
+        name: ip_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Ip'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Ip'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ip'
+      tags:
+      - api
+  /api/location/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listLocations
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Location'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createLocation
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Location'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Location'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Location'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Location'
+      tags:
+      - api
+  /api/location/{location_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveLocation
+      parameters:
+      - description: A unique integer value identifying this location.
+        explode: false
+        in: path
+        name: location_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Location'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateLocation
+      parameters:
+      - description: A unique integer value identifying this location.
+        explode: false
+        in: path
+        name: location_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Location'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Location'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Location'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Location'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateLocation
+      parameters:
+      - description: A unique integer value identifying this location.
+        explode: false
+        in: path
+        name: location_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Location'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Location'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Location'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Location'
+      tags:
+      - api
+  /api/os/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listOs
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Os'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createOs
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Os'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Os'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Os'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Os'
+      tags:
+      - api
+  /api/os/{os_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveOs
+      parameters:
+      - description: A unique integer value identifying this os.
+        explode: false
+        in: path
+        name: os_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Os'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateOs
+      parameters:
+      - description: A unique integer value identifying this os.
+        explode: false
+        in: path
+        name: os_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Os'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Os'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Os'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Os'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateOs
+      parameters:
+      - description: A unique integer value identifying this os.
+        explode: false
+        in: path
+        name: os_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Os'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Os'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Os'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Os'
+      tags:
+      - api
+  /api/osarch/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listOsarchs
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Osarch'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createOsarch
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Osarch'
+      tags:
+      - api
+  /api/osarch/{osarch_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveOsarch
+      parameters:
+      - description: A unique integer value identifying this osarch.
+        explode: false
+        in: path
+        name: osarch_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Osarch'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateOsarch
+      parameters:
+      - description: A unique integer value identifying this osarch.
+        explode: false
+        in: path
+        name: osarch_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Osarch'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateOsarch
+      parameters:
+      - description: A unique integer value identifying this osarch.
+        explode: false
+        in: path
+        name: osarch_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Osarch'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Osarch'
+      tags:
+      - api
+  /api/reason/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listReasons
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Reason'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createReason
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reason'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reason'
+      tags:
+      - api
+  /api/reason/{reason_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveReason
+      parameters:
+      - description: A unique integer value identifying this reason.
+        explode: false
+        in: path
+        name: reason_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reason'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateReason
+      parameters:
+      - description: A unique integer value identifying this reason.
+        explode: false
+        in: path
+        name: reason_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reason'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reason'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateReason
+      parameters:
+      - description: A unique integer value identifying this reason.
+        explode: false
+        in: path
+        name: reason_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reason'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reason'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reason'
+      tags:
+      - api
+  /api/recommendation/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listRecommendations
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Recommendation'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createRecommendation
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recommendation'
+      tags:
+      - api
+  /api/recommendation/{recommendation_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveRecommendation
+      parameters:
+      - description: A unique integer value identifying this recommendation.
+        explode: false
+        in: path
+        name: recommendation_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recommendation'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateRecommendation
+      parameters:
+      - description: A unique integer value identifying this recommendation.
+        explode: false
+        in: path
+        name: recommendation_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recommendation'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateRecommendation
+      parameters:
+      - description: A unique integer value identifying this recommendation.
+        explode: false
+        in: path
+        name: recommendation_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Recommendation'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recommendation'
+      tags:
+      - api
+  /api/serviceprovider/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listServiceproviders
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Serviceprovider'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createServiceprovider
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Serviceprovider'
+      tags:
+      - api
+  /api/serviceprovider/{serviceprovider_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveServiceprovider
+      parameters:
+      - description: A unique integer value identifying this serviceprovider.
+        explode: false
+        in: path
+        name: serviceprovider_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Serviceprovider'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateServiceprovider
+      parameters:
+      - description: A unique integer value identifying this serviceprovider.
+        explode: false
+        in: path
+        name: serviceprovider_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Serviceprovider'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateServiceprovider
+      parameters:
+      - description: A unique integer value identifying this serviceprovider.
+        explode: false
+        in: path
+        name: serviceprovider_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Serviceprovider'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Serviceprovider'
+      tags:
+      - api
+  /api/system/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listSystems
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/System'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createSystem
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/System'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/System'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+      tags:
+      - api
+  /api/system/{system_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveSystem
+      parameters:
+      - description: A unique integer value identifying this system.
+        explode: false
+        in: path
+        name: system_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateSystem
+      parameters:
+      - description: A unique integer value identifying this system.
+        explode: false
+        in: path
+        name: system_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/System'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/System'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateSystem
+      parameters:
+      - description: A unique integer value identifying this system.
+        explode: false
+        in: path
+        name: system_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/System'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/System'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/System'
+      tags:
+      - api
+  /api/systemstatus/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listSystemstatus
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Systemstatus'
+                type: array
+      tags:
+      - api
+  /api/systemstatus/{systemstatus_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveSystemstatus
+      parameters:
+      - description: A unique integer value identifying this systemstatus.
+        explode: false
+        in: path
+        name: systemstatus_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemstatus'
+      tags:
+      - api
+  /api/systemtype/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listSystemtypes
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Systemtype'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createSystemtype
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemtype'
+      tags:
+      - api
+  /api/systemtype/{systemtype_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveSystemtype
+      parameters:
+      - description: A unique integer value identifying this systemtype.
+        explode: false
+        in: path
+        name: systemtype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemtype'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateSystemtype
+      parameters:
+      - description: A unique integer value identifying this systemtype.
+        explode: false
+        in: path
+        name: systemtype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemtype'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateSystemtype
+      parameters:
+      - description: A unique integer value identifying this systemtype.
+        explode: false
+        in: path
+        name: systemtype_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemtype'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemtype'
+      tags:
+      - api
+  /api/systemuser/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listSystemusers
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Systemuser'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createSystemuser
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemuser'
+      tags:
+      - api
+  /api/systemuser/{systemuser_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveSystemuser
+      parameters:
+      - description: A unique integer value identifying this systemuser.
+        explode: false
+        in: path
+        name: systemuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemuser'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateSystemuser
+      parameters:
+      - description: A unique integer value identifying this systemuser.
+        explode: false
+        in: path
+        name: systemuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemuser'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateSystemuser
+      parameters:
+      - description: A unique integer value identifying this systemuser.
+        explode: false
+        in: path
+        name: systemuser_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Systemuser'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Systemuser'
+      tags:
+      - api
+  /api/tag/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listTags
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Tag'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createTag
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tag'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'
+      tags:
+      - api
+  /api/tag/{tag_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveTag
+      parameters:
+      - description: A unique integer value identifying this tag.
+        explode: false
+        in: path
+        name: tag_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateTag
+      parameters:
+      - description: A unique integer value identifying this tag.
+        explode: false
+        in: path
+        name: tag_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tag'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateTag
+      parameters:
+      - description: A unique integer value identifying this tag.
+        explode: false
+        in: path
+        name: tag_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tag'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tag'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'
+      tags:
+      - api
+  /api/tagcolor/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listTagcolors
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Tagcolor'
+                type: array
+      tags:
+      - api
+  /api/tagcolor/{tagcolor_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveTagcolor
+      parameters:
+      - description: A unique integer value identifying this tagcolor.
+        explode: false
+        in: path
+        name: tagcolor_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tagcolor'
+      tags:
+      - api
+  /api/task/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listTasks
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Task'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createTask
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+      tags:
+      - api
+  /api/task/{task_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveTask
+      parameters:
+      - description: A unique integer value identifying this task.
+        explode: false
+        in: path
+        name: task_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateTask
+      parameters:
+      - description: A unique integer value identifying this task.
+        explode: false
+        in: path
+        name: task_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateTask
+      parameters:
+      - description: A unique integer value identifying this task.
+        explode: false
+        in: path
+        name: task_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+      tags:
+      - api
+  /api/taskname/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listTasknames
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Taskname'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createTaskname
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskname'
+      tags:
+      - api
+  /api/taskname/{taskname_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveTaskname
+      parameters:
+      - description: A unique integer value identifying this taskname.
+        explode: false
+        in: path
+        name: taskname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskname'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateTaskname
+      parameters:
+      - description: A unique integer value identifying this taskname.
+        explode: false
+        in: path
+        name: taskname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskname'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateTaskname
+      parameters:
+      - description: A unique integer value identifying this taskname.
+        explode: false
+        in: path
+        name: taskname_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Taskname'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskname'
+      tags:
+      - api
+  /api/taskpriority/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listTaskprioritys
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Taskpriority'
+                type: array
+      tags:
+      - api
+  /api/taskpriority/{taskpriority_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveTaskpriority
+      parameters:
+      - description: A unique integer value identifying this taskpriority.
+        explode: false
+        in: path
+        name: taskpriority_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskpriority'
+      tags:
+      - api
+  /api/taskstatus/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listTaskstatus
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Taskstatus'
+                type: array
+      tags:
+      - api
+  /api/taskstatus/{taskstatus_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveTaskstatus
+      parameters:
+      - description: A unique integer value identifying this taskstatus.
+        explode: false
+        in: path
+        name: taskstatus_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Taskstatus'
+      tags:
+      - api
+components:
+  schemas:
+    Artifact:
+      example:
+        artifact_source_path: artifact_source_path
+        artifact_md5: artifact_md5
+        artifact_modify_time: 2000-01-23T04:56:07.000+00:00
+        artifact_id: 0
+        artifact_uuid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        artifact_storage_path: artifact_storage_path
+        artifactstatus: 6
+        artifacttype: 1
+        artifact_sha1: artifact_sha1
+        system: 5
+        artifact_created_by_user_id: 2
+        artifact_acquisition_time: 2000-01-23T04:56:07.000+00:00
+        artifact_name: artifact_name
+        artifact_modified_by_user_id: 7
+        artifact_sha256: artifact_sha256
+        artifact_requested_time: 2000-01-23T04:56:07.000+00:00
+        artifact_create_time: 2000-01-23T04:56:07.000+00:00
+        case: 5
+      properties:
+        artifact_id:
+          readOnly: true
+          type: integer
+        artifact_uuid:
+          format: uuid
+          readOnly: true
+          type: string
+        artifact_name:
+          maxLength: 4096
+          type: string
+        artifactstatus:
+          type: integer
+        artifacttype:
+          type: integer
+        case:
+          nullable: true
+          type: integer
+        system:
+          type: integer
+        artifact_md5:
+          maxLength: 32
+          nullable: true
+          type: string
+        artifact_sha1:
+          maxLength: 40
+          nullable: true
+          type: string
+        artifact_sha256:
+          maxLength: 64
+          nullable: true
+          type: string
+        artifact_source_path:
+          maxLength: 4096
+          nullable: true
+          type: string
+        artifact_storage_path:
+          readOnly: true
+          type: string
+        artifact_acquisition_time:
+          format: date-time
+          nullable: true
+          type: string
+        artifact_requested_time:
+          format: date-time
+          nullable: true
+          type: string
+        artifact_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+        artifact_created_by_user_id:
+          type: integer
+        artifact_modify_time:
+          format: date-time
+          readOnly: true
+          type: string
+        artifact_modified_by_user_id:
+          type: integer
+      required:
+      - artifact_created_by_user_id
+      - artifact_modified_by_user_id
+      - artifact_name
+      - artifacttype
+      - system
+      type: object
+    Artifactstatus:
+      example:
+        artifactstatus_name: artifactstatus_name
+      properties:
+        artifactstatus_name:
+          maxLength: 255
+          type: string
+      required:
+      - artifactstatus_name
+      type: object
+    Artifacttype:
+      example:
+        artifacttype_name: artifacttype_name
+      properties:
+        artifacttype_name:
+          maxLength: 255
+          type: string
+      required:
+      - artifacttype_name
+      type: object
+    Analysisstatus:
+      example:
+        analysisstatus_name: analysisstatus_name
+        analysisstatus_id: 0
+      properties:
+        analysisstatus_id:
+          readOnly: true
+          type: integer
+        analysisstatus_name:
+          maxLength: 30
+          type: string
+      required:
+      - analysisstatus_name
+      type: object
+    Case:
+      example:
+        case_create_time: 2000-01-23T04:56:07.000+00:00
+        case_is_incident: true
+        case_name: case_name
+        case_id: 0
+        case_created_by_user_id: 6
+      properties:
+        case_id:
+          readOnly: true
+          type: integer
+        case_name:
+          maxLength: 50
+          type: string
+        case_is_incident:
+          type: boolean
+        case_created_by_user_id:
+          type: integer
+        case_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+      required:
+      - case_created_by_user_id
+      - case_is_incident
+      - case_name
+      type: object
+    Company:
+      example:
+        division: 6
+        company_id: 0
+        company_name: company_name
+      properties:
+        company_id:
+          readOnly: true
+          type: integer
+        company_name:
+          maxLength: 50
+          type: string
+        division:
+          nullable: true
+          type: integer
+      required:
+      - company_name
+      type: object
+    Contact:
+      example:
+        contact_name: contact_name
+        contact_phone: contact_phone
+        contact_id: 0
+        contact_email: contact_email
+      properties:
+        contact_id:
+          readOnly: true
+          type: integer
+        contact_name:
+          maxLength: 100
+          type: string
+        contact_email:
+          maxLength: 100
+          type: string
+        contact_phone:
+          maxLength: 50
+          nullable: true
+          type: string
+      required:
+      - contact_email
+      - contact_name
+      type: object
+    Division:
+      example:
+        division_name: division_name
+        division_id: 0
+      properties:
+        division_id:
+          readOnly: true
+          type: integer
+        division_name:
+          maxLength: 50
+          type: string
+      required:
+      - division_name
+      type: object
+    Dnsname:
+      example:
+        dnsname_id: 0
+        domain: 6
+        dnsname_name: dnsname_name
+      properties:
+        dnsname_id:
+          readOnly: true
+          type: integer
+        dnsname_name:
+          maxLength: 100
+          type: string
+        domain:
+          nullable: true
+          type: integer
+      required:
+      - dnsname_name
+      type: object
+    Domain:
+      example:
+        domain_id: 0
+        domain_name: domain_name
+      properties:
+        domain_id:
+          readOnly: true
+          type: integer
+        domain_name:
+          maxLength: 100
+          type: string
+      required:
+      - domain_name
+      type: object
+    Domainuser:
+      example:
+        domainuser_is_domainadmin: true
+        domainuser_name: domainuser_name
+        domain: 6
+        domainuser_id: 0
+      properties:
+        domainuser_id:
+          readOnly: true
+          type: integer
+        domainuser_name:
+          maxLength: 50
+          type: string
+        domain:
+          type: integer
+        domainuser_is_domainadmin:
+          nullable: true
+          type: boolean
+      required:
+      - domain
+      - domainuser_name
+      type: object
+    Ip:
+      example:
+        ip_ip: ip_ip
+        ip_id: 0
+      properties:
+        ip_id:
+          readOnly: true
+          type: integer
+        ip_ip:
+          type: string
+      required:
+      - ip_ip
+      type: object
+    Location:
+      example:
+        location_name: location_name
+        location_id: 0
+      properties:
+        location_id:
+          readOnly: true
+          type: integer
+        location_name:
+          maxLength: 50
+          type: string
+      required:
+      - location_name
+      type: object
+    Os:
+      example:
+        os_id: 0
+        os_name: os_name
+      properties:
+        os_id:
+          readOnly: true
+          type: integer
+        os_name:
+          maxLength: 30
+          type: string
+      required:
+      - os_name
+      type: object
+    Osarch:
+      example:
+        osarch_name: osarch_name
+        osarch_id: 0
+      properties:
+        osarch_id:
+          readOnly: true
+          type: integer
+        osarch_name:
+          maxLength: 10
+          type: string
+      required:
+      - osarch_name
+      type: object
+    Reason:
+      example:
+        reason_name: reason_name
+        reason_id: 0
+      properties:
+        reason_id:
+          readOnly: true
+          type: integer
+        reason_name:
+          maxLength: 30
+          type: string
+      required:
+      - reason_name
+      type: object
+    Recommendation:
+      example:
+        recommendation_id: 0
+        recommendation_name: recommendation_name
+      properties:
+        recommendation_id:
+          readOnly: true
+          type: integer
+        recommendation_name:
+          maxLength: 30
+          type: string
+      required:
+      - recommendation_name
+      type: object
+    Serviceprovider:
+      example:
+        serviceprovider_name: serviceprovider_name
+        serviceprovider_id: 0
+      properties:
+        serviceprovider_id:
+          readOnly: true
+          type: integer
+        serviceprovider_name:
+          maxLength: 50
+          type: string
+      required:
+      - serviceprovider_name
+      type: object
+    System:
+      example:
+        reason: 2
+        system_is_vm: true
+        system_export_spreadsheet: true
+        serviceprovider: 1
+        recommendation: 7
+        systemtype: 9
+        system_uuid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        system_created_by_user_id: 4
+        system_modify_time: 2000-01-23T04:56:07.000+00:00
+        osarch: 4
+        system_lastbooted_time: 2000-01-23T04:56:07.000+00:00
+        contact: 6
+        dnsname: 1
+        company:
+        - 1
+        - 1
+        tag:
+        - 7
+        - 7
+        case:
+        - 1
+        - 1
+        os: 2
+        analysisstatus: 5
+        system_id: 0
+        system_name: system_name
+        ip:
+        - 3
+        - 3
+        system_modified_by_user_id: 5
+        system_api_time: 2000-01-23T04:56:07.000+00:00
+        system_export_markdown: true
+        systemstatus: 5
+        system_create_time: 2000-01-23T04:56:07.000+00:00
+        host_system: 7
+        domain: 6
+        system_deprecated_time: 2000-01-23T04:56:07.000+00:00
+        location: 1
+      properties:
+        system_id:
+          readOnly: true
+          type: integer
+        system_uuid:
+          format: uuid
+          readOnly: true
+          type: string
+        system_name:
+          maxLength: 50
+          type: string
+        domain:
+          nullable: true
+          type: integer
+        dnsname:
+          nullable: true
+          type: integer
+        systemstatus:
+          type: integer
+        analysisstatus:
+          nullable: true
+          type: integer
+        reason:
+          nullable: true
+          type: integer
+        recommendation:
+          nullable: true
+          type: integer
+        systemtype:
+          nullable: true
+          type: integer
+        ip:
+          items:
+            type: integer
+          type: array
+        os:
+          nullable: true
+          type: integer
+        osarch:
+          nullable: true
+          type: integer
+        system_lastbooted_time:
+          format: date-time
+          nullable: true
+          type: string
+        system_deprecated_time:
+          format: date-time
+          nullable: true
+          type: string
+        system_is_vm:
+          nullable: true
+          type: boolean
+        host_system:
+          nullable: true
+          type: integer
+        company:
+          items:
+            type: integer
+          type: array
+        location:
+          nullable: true
+          type: integer
+        serviceprovider:
+          nullable: true
+          type: integer
+        contact:
+          nullable: true
+          type: integer
+        tag:
+          items:
+            type: integer
+          type: array
+        case:
+          items:
+            type: integer
+          type: array
+        system_api_time:
+          format: date-time
+          nullable: true
+          type: string
+        system_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+        system_created_by_user_id:
+          type: integer
+        system_modify_time:
+          format: date-time
+          type: string
+        system_modified_by_user_id:
+          type: integer
+        system_export_markdown:
+          type: boolean
+        system_export_spreadsheet:
+          type: boolean
+      required:
+      - system_created_by_user_id
+      - system_modified_by_user_id
+      - system_modify_time
+      - system_name
+      - systemstatus
+      type: object
+    Systemstatus:
+      example:
+        systemstatus_id: 0
+        systemstatus_name: systemstatus_name
+      properties:
+        systemstatus_id:
+          readOnly: true
+          type: integer
+        systemstatus_name:
+          maxLength: 30
+          type: string
+      required:
+      - systemstatus_name
+      type: object
+    Systemtype:
+      example:
+        systemtype_name: systemtype_name
+        systemtype_id: 0
+      properties:
+        systemtype_id:
+          readOnly: true
+          type: integer
+        systemtype_name:
+          maxLength: 50
+          type: string
+      required:
+      - systemtype_name
+      type: object
+    Systemuser:
+      example:
+        systemuser_id: 0
+        systemuser_is_systemadmin: true
+        system: 6
+        systemuser_name: systemuser_name
+        systemuser_lastlogon_time: 2000-01-23T04:56:07.000+00:00
+      properties:
+        systemuser_id:
+          readOnly: true
+          type: integer
+        systemuser_name:
+          maxLength: 50
+          type: string
+        system:
+          type: integer
+        systemuser_lastlogon_time:
+          format: date-time
+          nullable: true
+          type: string
+        systemuser_is_systemadmin:
+          nullable: true
+          type: boolean
+      required:
+      - system
+      - systemuser_name
+      type: object
+    Tag:
+      example:
+        tag_name: tag_name
+        tagcolor: 6
+        tag_id: 0
+      properties:
+        tag_id:
+          readOnly: true
+          type: integer
+        tag_name:
+          maxLength: 50
+          type: string
+        tagcolor:
+          type: integer
+      required:
+      - tag_name
+      - tagcolor
+      type: object
+    Tagcolor:
+      example:
+        tagcolor_id: 0
+        tagcolor_name: tagcolor_name
+      properties:
+        tagcolor_id:
+          readOnly: true
+          type: integer
+        tagcolor_name:
+          maxLength: 20
+          type: string
+      required:
+      - tagcolor_name
+      type: object
+    Task:
+      example:
+        task_modified_by_user_id: 2
+        taskname: 1
+        task_due_time: 2000-01-23T04:56:07.000+00:00
+        task_id: 0
+        taskpriority: 5
+        taskstatus: 5
+        system: 2
+        task_assigned_to_user_id: 7
+        task_create_time: 2000-01-23T04:56:07.000+00:00
+        task_started_time: 2000-01-23T04:56:07.000+00:00
+        task_created_by_user_id: 3
+        parent_task: 6
+        task_scheduled_time: 2000-01-23T04:56:07.000+00:00
+        task_finished_time: 2000-01-23T04:56:07.000+00:00
+        tag:
+        - 9
+        - 9
+        task_modify_time: 2000-01-23T04:56:07.000+00:00
+      properties:
+        task_id:
+          readOnly: true
+          type: integer
+        parent_task:
+          nullable: true
+          type: integer
+        taskname:
+          type: integer
+        taskpriority:
+          type: integer
+        taskstatus:
+          type: integer
+        system:
+          nullable: true
+          type: integer
+        task_assigned_to_user_id:
+          nullable: true
+          type: integer
+        tag:
+          items:
+            type: integer
+          type: array
+        task_scheduled_time:
+          format: date-time
+          nullable: true
+          type: string
+        task_started_time:
+          format: date-time
+          nullable: true
+          type: string
+        task_finished_time:
+          format: date-time
+          nullable: true
+          type: string
+        task_due_time:
+          format: date-time
+          nullable: true
+          type: string
+        task_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+        task_modify_time:
+          format: date-time
+          readOnly: true
+          type: string
+        task_created_by_user_id:
+          type: integer
+        task_modified_by_user_id:
+          type: integer
+      required:
+      - task_created_by_user_id
+      - task_modified_by_user_id
+      - taskname
+      - taskpriority
+      - taskstatus
+      type: object
+    Taskname:
+      example:
+        taskname_id: 0
+        taskname_name: taskname_name
+      properties:
+        taskname_id:
+          readOnly: true
+          type: integer
+        taskname_name:
+          maxLength: 50
+          type: string
+      required:
+      - taskname_name
+      type: object
+    Taskpriority:
+      example:
+        taskpriority_name: taskpriority_name
+        taskpriority_id: 0
+      properties:
+        taskpriority_id:
+          readOnly: true
+          type: integer
+        taskpriority_name:
+          maxLength: 6
+          type: string
+      required:
+      - taskpriority_name
+      type: object
+    Taskstatus:
+      example:
+        taskstatus_name: taskstatus_name
+        taskstatus_id: 0
+      properties:
+        taskstatus_id:
+          readOnly: true
+          type: integer
+        taskstatus_name:
+          maxLength: 50
+          type: string
+      required:
+      - taskstatus_name
+      type: object
+  securitySchemes:
+    BasicAuth:
+      description: HTTP Basic Authentication for DFIRTrack API.
+      scheme: basic
+      type: http
