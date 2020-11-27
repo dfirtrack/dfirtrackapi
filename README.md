@@ -1,4 +1,4 @@
-# Go API client for dfirtrack-api-go-client
+# Go API client for dfirtrackapi
 
 OpenAPI 3 - Documentation of DFIRTrack API
 
@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```golang
-import sw "./dfirtrack-api-go-client"
+import sw "./dfirtrackapi"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:
