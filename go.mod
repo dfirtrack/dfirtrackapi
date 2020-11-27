@@ -1,4 +1,4 @@
-module github.com/n3x77/dfirtrack-api-go-client
+module github.com/n3x77/dfirtrackapi
 
 go 1.13
 
