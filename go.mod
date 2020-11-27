@@ -1,5 +1,7 @@
-module github.com/n3x77/dfirtrack-api-go-client
+module github.com/GIT_USER_ID/GIT_REPO_ID
 
-go 1.14
+go 1.13
 
-require golang.org/x/oauth2 v0.0.0-20201109201403-9fd604954f58
+require (
+	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
+)
