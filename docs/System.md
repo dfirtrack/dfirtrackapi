@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **Ip** | Pointer to **[]int32** |  | [optional] 
 **Os** | Pointer to **NullableInt32** |  | [optional] 
 **Osarch** | Pointer to **NullableInt32** |  | [optional] 
-**SystemLastbootedTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**SystemDeprecatedTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
+**SystemLastbootedTime** | Pointer to **NullableTime** |  | [optional] 
+**SystemDeprecatedTime** | Pointer to **NullableTime** |  | [optional] 
 **SystemIsVm** | Pointer to **NullableBool** |  | [optional] 
 **HostSystem** | Pointer to **NullableInt32** |  | [optional] 
 **Company** | Pointer to **[]int32** |  | [optional] 
@@ -27,10 +27,10 @@ Name | Type | Description | Notes
 **Contact** | Pointer to **NullableInt32** |  | [optional] 
 **Tag** | Pointer to **[]int32** |  | [optional] 
 **Case** | Pointer to **[]int32** |  | [optional] 
-**SystemApiTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**SystemCreateTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
+**SystemApiTime** | Pointer to **NullableTime** |  | [optional] 
+**SystemCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **SystemCreatedByUserId** | **int32** |  | 
-**SystemModifyTime** | [**time.Time**](time.Time.md) |  | 
+**SystemModifyTime** | **time.Time** |  | 
 **SystemModifiedByUserId** | **int32** |  | 
 **SystemExportMarkdown** | Pointer to **bool** |  | [optional] 
 **SystemExportSpreadsheet** | Pointer to **bool** |  | [optional] 

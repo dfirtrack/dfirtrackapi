@@ -16,11 +16,11 @@ Name | Type | Description | Notes
 **ArtifactSha256** | Pointer to **NullableString** |  | [optional] 
 **ArtifactSourcePath** | Pointer to **NullableString** |  | [optional] 
 **ArtifactStoragePath** | Pointer to **string** |  | [optional] [readonly] 
-**ArtifactAcquisitionTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**ArtifactRequestedTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**ArtifactCreateTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
+**ArtifactAcquisitionTime** | Pointer to **NullableTime** |  | [optional] 
+**ArtifactRequestedTime** | Pointer to **NullableTime** |  | [optional] 
+**ArtifactCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **ArtifactCreatedByUserId** | **int32** |  | 
-**ArtifactModifyTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
+**ArtifactModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **ArtifactModifiedByUserId** | **int32** |  | 
 
 ## Methods
