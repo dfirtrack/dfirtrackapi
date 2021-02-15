@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **SystemuserId** | Pointer to **int32** |  | [optional] [readonly] 
 **SystemuserName** | **string** |  | 
 **System** | **int32** |  | 
-**SystemuserLastlogonTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
+**SystemuserLastlogonTime** | Pointer to **NullableTime** |  | [optional] 
 **SystemuserIsSystemadmin** | Pointer to **NullableBool** |  | [optional] 
 
 ## Methods

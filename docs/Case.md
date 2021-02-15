@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **CaseName** | **string** |  | 
 **CaseIsIncident** | **bool** |  | 
 **CaseCreatedByUserId** | **int32** |  | 
-**CaseCreateTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
+**CaseCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 
 ## Methods
 

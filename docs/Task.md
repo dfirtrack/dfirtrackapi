@@ -12,12 +12,12 @@ Name | Type | Description | Notes
 **System** | Pointer to **NullableInt32** |  | [optional] 
 **TaskAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 **Tag** | Pointer to **[]int32** |  | [optional] 
-**TaskScheduledTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**TaskStartedTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**TaskFinishedTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**TaskDueTime** | Pointer to [**NullableTime**](time.Time.md) |  | [optional] 
-**TaskCreateTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
-**TaskModifyTime** | Pointer to [**time.Time**](time.Time.md) |  | [optional] [readonly] 
+**TaskScheduledTime** | Pointer to **NullableTime** |  | [optional] 
+**TaskStartedTime** | Pointer to **NullableTime** |  | [optional] 
+**TaskFinishedTime** | Pointer to **NullableTime** |  | [optional] 
+**TaskDueTime** | Pointer to **NullableTime** |  | [optional] 
+**TaskCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
+**TaskModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **TaskCreatedByUserId** | **int32** |  | 
 **TaskModifiedByUserId** | **int32** |  | 
 

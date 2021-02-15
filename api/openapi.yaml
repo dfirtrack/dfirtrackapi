@@ -2,11 +2,12 @@ openapi: 3.0.2
 info:
   description: OpenAPI 3 - Documentation of DFIRTrack API
   title: DFIRTrack
-  version: 0.4.1
+  version: v0.4.7
 servers:
 - url: /
 security:
-- BasicAuth: []
+- basicAuth: []
+- bearerAuth: []
 paths:
   /api/artifact/:
     get:
@@ -2886,6 +2887,29 @@ paths:
                 $ref: '#/components/schemas/Taskstatus'
       tags:
       - api
+  /api/token-auth/:
+    post:
+      operationId: createAuthToken
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthToken'
+      tags:
+      - api
 components:
   schemas:
     Artifact:
@@ -3572,7 +3596,7 @@ components:
           readOnly: true
           type: integer
         taskpriority_name:
-          maxLength: 6
+          maxLength: 50
           type: string
       required:
       - taskpriority_name
@@ -3591,8 +3615,32 @@ components:
       required:
       - taskstatus_name
       type: object
+    AuthToken:
+      example:
+        password: password
+        username: username
+        token: token
+      properties:
+        username:
+          type: string
+          writeOnly: true
+        password:
+          type: string
+          writeOnly: true
+        token:
+          readOnly: true
+          type: string
+      required:
+      - password
+      - username
+      type: object
   securitySchemes:
-    BasicAuth:
-      description: HTTP Basic Authentication for DFIRTrack API.
+    basicAuth:
+      description: basic authentication
       scheme: basic
+      type: http
+    bearerAuth:
+      description: API Token authentication
+      name: Token
+      scheme: bearer
       type: http
