@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **Taskname** | **int32** |  | 
 **Taskpriority** | **int32** |  | 
 **Taskstatus** | **int32** |  | 
+**Artifact** | Pointer to **NullableInt32** |  | [optional] 
+**Case** | Pointer to **NullableInt32** |  | [optional] 
 **System** | Pointer to **NullableInt32** |  | [optional] 
 **TaskAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 **Tag** | Pointer to **[]int32** |  | [optional] 
@@ -160,6 +162,76 @@ and a boolean to check if the value has been set.
 SetTaskstatus sets Taskstatus field to given value.
 
 
+### GetArtifact
+
+`func (o *Task) GetArtifact() int32`
+
+GetArtifact returns the Artifact field if non-nil, zero value otherwise.
+
+### GetArtifactOk
+
+`func (o *Task) GetArtifactOk() (*int32, bool)`
+
+GetArtifactOk returns a tuple with the Artifact field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetArtifact
+
+`func (o *Task) SetArtifact(v int32)`
+
+SetArtifact sets Artifact field to given value.
+
+### HasArtifact
+
+`func (o *Task) HasArtifact() bool`
+
+HasArtifact returns a boolean if a field has been set.
+
+### SetArtifactNil
+
+`func (o *Task) SetArtifactNil(b bool)`
+
+ SetArtifactNil sets the value for Artifact to be an explicit nil
+
+### UnsetArtifact
+`func (o *Task) UnsetArtifact()`
+
+UnsetArtifact ensures that no value is present for Artifact, not even an explicit nil
+### GetCase
+
+`func (o *Task) GetCase() int32`
+
+GetCase returns the Case field if non-nil, zero value otherwise.
+
+### GetCaseOk
+
+`func (o *Task) GetCaseOk() (*int32, bool)`
+
+GetCaseOk returns a tuple with the Case field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCase
+
+`func (o *Task) SetCase(v int32)`
+
+SetCase sets Case field to given value.
+
+### HasCase
+
+`func (o *Task) HasCase() bool`
+
+HasCase returns a boolean if a field has been set.
+
+### SetCaseNil
+
+`func (o *Task) SetCaseNil(b bool)`
+
+ SetCaseNil sets the value for Case to be an explicit nil
+
+### UnsetCase
+`func (o *Task) UnsetCase()`
+
+UnsetCase ensures that no value is present for Case, not even an explicit nil
 ### GetSystem
 
 `func (o *Task) GetSystem() int32`

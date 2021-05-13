@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ArtifacttypeId** | Pointer to **int32** |  | [optional] [readonly] 
 **ArtifacttypeName** | **string** |  | 
 
 ## Methods
@@ -24,6 +25,31 @@ will change when the set of required properties is changed
 NewArtifacttypeWithDefaults instantiates a new Artifacttype object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetArtifacttypeId
+
+`func (o *Artifacttype) GetArtifacttypeId() int32`
+
+GetArtifacttypeId returns the ArtifacttypeId field if non-nil, zero value otherwise.
+
+### GetArtifacttypeIdOk
+
+`func (o *Artifacttype) GetArtifacttypeIdOk() (*int32, bool)`
+
+GetArtifacttypeIdOk returns a tuple with the ArtifacttypeId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetArtifacttypeId
+
+`func (o *Artifacttype) SetArtifacttypeId(v int32)`
+
+SetArtifacttypeId sets ArtifacttypeId field to given value.
+
+### HasArtifacttypeId
+
+`func (o *Artifacttype) HasArtifacttypeId() bool`
+
+HasArtifacttypeId returns a boolean if a field has been set.
 
 ### GetArtifacttypeName
 

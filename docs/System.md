@@ -27,10 +27,9 @@ Name | Type | Description | Notes
 **Contact** | Pointer to **NullableInt32** |  | [optional] 
 **Tag** | Pointer to **[]int32** |  | [optional] 
 **Case** | Pointer to **[]int32** |  | [optional] 
-**SystemApiTime** | Pointer to **NullableTime** |  | [optional] 
 **SystemCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **SystemCreatedByUserId** | **int32** |  | 
-**SystemModifyTime** | **time.Time** |  | 
+**SystemModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **SystemModifiedByUserId** | **int32** |  | 
 **SystemExportMarkdown** | Pointer to **bool** |  | [optional] 
 **SystemExportSpreadsheet** | Pointer to **bool** |  | [optional] 
@@ -39,7 +38,7 @@ Name | Type | Description | Notes
 
 ### NewSystem
 
-`func NewSystem(systemName string, systemstatus int32, systemCreatedByUserId int32, systemModifyTime time.Time, systemModifiedByUserId int32, ) *System`
+`func NewSystem(systemName string, systemstatus int32, systemCreatedByUserId int32, systemModifiedByUserId int32, ) *System`
 
 NewSystem instantiates a new System object
 This constructor will assign default values to properties that have it defined,
@@ -769,41 +768,6 @@ SetCase sets Case field to given value.
 
 HasCase returns a boolean if a field has been set.
 
-### GetSystemApiTime
-
-`func (o *System) GetSystemApiTime() time.Time`
-
-GetSystemApiTime returns the SystemApiTime field if non-nil, zero value otherwise.
-
-### GetSystemApiTimeOk
-
-`func (o *System) GetSystemApiTimeOk() (*time.Time, bool)`
-
-GetSystemApiTimeOk returns a tuple with the SystemApiTime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSystemApiTime
-
-`func (o *System) SetSystemApiTime(v time.Time)`
-
-SetSystemApiTime sets SystemApiTime field to given value.
-
-### HasSystemApiTime
-
-`func (o *System) HasSystemApiTime() bool`
-
-HasSystemApiTime returns a boolean if a field has been set.
-
-### SetSystemApiTimeNil
-
-`func (o *System) SetSystemApiTimeNil(b bool)`
-
- SetSystemApiTimeNil sets the value for SystemApiTime to be an explicit nil
-
-### UnsetSystemApiTime
-`func (o *System) UnsetSystemApiTime()`
-
-UnsetSystemApiTime ensures that no value is present for SystemApiTime, not even an explicit nil
 ### GetSystemCreateTime
 
 `func (o *System) GetSystemCreateTime() time.Time`
@@ -868,6 +832,11 @@ and a boolean to check if the value has been set.
 
 SetSystemModifyTime sets SystemModifyTime field to given value.
 
+### HasSystemModifyTime
+
+`func (o *System) HasSystemModifyTime() bool`
+
+HasSystemModifyTime returns a boolean if a field has been set.
 
 ### GetSystemModifiedByUserId
 

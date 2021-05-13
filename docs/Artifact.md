@@ -7,10 +7,12 @@ Name | Type | Description | Notes
 **ArtifactId** | Pointer to **int32** |  | [optional] [readonly] 
 **ArtifactUuid** | Pointer to **string** |  | [optional] [readonly] 
 **ArtifactName** | **string** |  | 
+**Artifactpriority** | Pointer to **int32** |  | [optional] 
 **Artifactstatus** | Pointer to **int32** |  | [optional] 
 **Artifacttype** | **int32** |  | 
 **Case** | Pointer to **NullableInt32** |  | [optional] 
 **System** | **int32** |  | 
+**Tag** | Pointer to **[]int32** |  | [optional] 
 **ArtifactMd5** | Pointer to **NullableString** |  | [optional] 
 **ArtifactSha1** | Pointer to **NullableString** |  | [optional] 
 **ArtifactSha256** | Pointer to **NullableString** |  | [optional] 
@@ -112,6 +114,31 @@ and a boolean to check if the value has been set.
 SetArtifactName sets ArtifactName field to given value.
 
 
+### GetArtifactpriority
+
+`func (o *Artifact) GetArtifactpriority() int32`
+
+GetArtifactpriority returns the Artifactpriority field if non-nil, zero value otherwise.
+
+### GetArtifactpriorityOk
+
+`func (o *Artifact) GetArtifactpriorityOk() (*int32, bool)`
+
+GetArtifactpriorityOk returns a tuple with the Artifactpriority field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetArtifactpriority
+
+`func (o *Artifact) SetArtifactpriority(v int32)`
+
+SetArtifactpriority sets Artifactpriority field to given value.
+
+### HasArtifactpriority
+
+`func (o *Artifact) HasArtifactpriority() bool`
+
+HasArtifactpriority returns a boolean if a field has been set.
+
 ### GetArtifactstatus
 
 `func (o *Artifact) GetArtifactstatus() int32`
@@ -211,6 +238,31 @@ and a boolean to check if the value has been set.
 
 SetSystem sets System field to given value.
 
+
+### GetTag
+
+`func (o *Artifact) GetTag() []int32`
+
+GetTag returns the Tag field if non-nil, zero value otherwise.
+
+### GetTagOk
+
+`func (o *Artifact) GetTagOk() (*[]int32, bool)`
+
+GetTagOk returns a tuple with the Tag field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTag
+
+`func (o *Artifact) SetTag(v []int32)`
+
+SetTag sets Tag field to given value.
+
+### HasTag
+
+`func (o *Artifact) HasTag() bool`
+
+HasTag returns a boolean if a field has been set.
 
 ### GetArtifactMd5
 

@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**CreateArtifacttype**](ApiApi.md#CreateArtifacttype) | **Post** /api/artifacttype/ | 
 [**CreateAuthToken**](ApiApi.md#CreateAuthToken) | **Post** /api/token-auth/ | 
 [**CreateCase**](ApiApi.md#CreateCase) | **Post** /api/case/ | 
+[**CreateCasetype**](ApiApi.md#CreateCasetype) | **Post** /api/casetype/ | 
 [**CreateCompany**](ApiApi.md#CreateCompany) | **Post** /api/company/ | 
 [**CreateContact**](ApiApi.md#CreateContact) | **Post** /api/contact/ | 
 [**CreateDivision**](ApiApi.md#CreateDivision) | **Post** /api/division/ | 
@@ -28,10 +29,14 @@ Method | HTTP request | Description
 [**CreateTask**](ApiApi.md#CreateTask) | **Post** /api/task/ | 
 [**CreateTaskname**](ApiApi.md#CreateTaskname) | **Post** /api/taskname/ | 
 [**ListAnalysisstatus**](ApiApi.md#ListAnalysisstatus) | **Get** /api/analysisstatus/ | 
+[**ListArtifactprioritys**](ApiApi.md#ListArtifactprioritys) | **Get** /api/artifactpriority/ | 
 [**ListArtifacts**](ApiApi.md#ListArtifacts) | **Get** /api/artifact/ | 
 [**ListArtifactstatus**](ApiApi.md#ListArtifactstatus) | **Get** /api/artifactstatus/ | 
 [**ListArtifacttypes**](ApiApi.md#ListArtifacttypes) | **Get** /api/artifacttype/ | 
+[**ListCaseprioritys**](ApiApi.md#ListCaseprioritys) | **Get** /api/casepriority/ | 
 [**ListCases**](ApiApi.md#ListCases) | **Get** /api/case/ | 
+[**ListCasestatus**](ApiApi.md#ListCasestatus) | **Get** /api/casestatus/ | 
+[**ListCasetypes**](ApiApi.md#ListCasetypes) | **Get** /api/casetype/ | 
 [**ListCompanys**](ApiApi.md#ListCompanys) | **Get** /api/company/ | 
 [**ListContacts**](ApiApi.md#ListContacts) | **Get** /api/contact/ | 
 [**ListDivisions**](ApiApi.md#ListDivisions) | **Get** /api/division/ | 
@@ -58,6 +63,7 @@ Method | HTTP request | Description
 [**PartialUpdateArtifact**](ApiApi.md#PartialUpdateArtifact) | **Patch** /api/artifact/{artifact_id}/ | 
 [**PartialUpdateArtifacttype**](ApiApi.md#PartialUpdateArtifacttype) | **Patch** /api/artifacttype/{artifacttype_id}/ | 
 [**PartialUpdateCase**](ApiApi.md#PartialUpdateCase) | **Patch** /api/case/{case_id}/ | 
+[**PartialUpdateCasetype**](ApiApi.md#PartialUpdateCasetype) | **Patch** /api/casetype/{casetype_id}/ | 
 [**PartialUpdateCompany**](ApiApi.md#PartialUpdateCompany) | **Patch** /api/company/{company_id}/ | 
 [**PartialUpdateContact**](ApiApi.md#PartialUpdateContact) | **Patch** /api/contact/{contact_id}/ | 
 [**PartialUpdateDivision**](ApiApi.md#PartialUpdateDivision) | **Patch** /api/division/{division_id}/ | 
@@ -79,9 +85,13 @@ Method | HTTP request | Description
 [**PartialUpdateTaskname**](ApiApi.md#PartialUpdateTaskname) | **Patch** /api/taskname/{taskname_id}/ | 
 [**RetrieveAnalysisstatus**](ApiApi.md#RetrieveAnalysisstatus) | **Get** /api/analysisstatus/{analysisstatus_id}/ | 
 [**RetrieveArtifact**](ApiApi.md#RetrieveArtifact) | **Get** /api/artifact/{artifact_id}/ | 
+[**RetrieveArtifactpriority**](ApiApi.md#RetrieveArtifactpriority) | **Get** /api/artifactpriority/{artifactpriority_id}/ | 
 [**RetrieveArtifactstatus**](ApiApi.md#RetrieveArtifactstatus) | **Get** /api/artifactstatus/{artifactstatus_id}/ | 
 [**RetrieveArtifacttype**](ApiApi.md#RetrieveArtifacttype) | **Get** /api/artifacttype/{artifacttype_id}/ | 
 [**RetrieveCase**](ApiApi.md#RetrieveCase) | **Get** /api/case/{case_id}/ | 
+[**RetrieveCasepriority**](ApiApi.md#RetrieveCasepriority) | **Get** /api/casepriority/{casepriority_id}/ | 
+[**RetrieveCasestatus**](ApiApi.md#RetrieveCasestatus) | **Get** /api/casestatus/{casestatus_id}/ | 
+[**RetrieveCasetype**](ApiApi.md#RetrieveCasetype) | **Get** /api/casetype/{casetype_id}/ | 
 [**RetrieveCompany**](ApiApi.md#RetrieveCompany) | **Get** /api/company/{company_id}/ | 
 [**RetrieveContact**](ApiApi.md#RetrieveContact) | **Get** /api/contact/{contact_id}/ | 
 [**RetrieveDivision**](ApiApi.md#RetrieveDivision) | **Get** /api/division/{division_id}/ | 
@@ -108,6 +118,7 @@ Method | HTTP request | Description
 [**UpdateArtifact**](ApiApi.md#UpdateArtifact) | **Put** /api/artifact/{artifact_id}/ | 
 [**UpdateArtifacttype**](ApiApi.md#UpdateArtifacttype) | **Put** /api/artifacttype/{artifacttype_id}/ | 
 [**UpdateCase**](ApiApi.md#UpdateCase) | **Put** /api/case/{case_id}/ | 
+[**UpdateCasetype**](ApiApi.md#UpdateCasetype) | **Put** /api/casetype/{casetype_id}/ | 
 [**UpdateCompany**](ApiApi.md#UpdateCompany) | **Put** /api/company/{company_id}/ | 
 [**UpdateContact**](ApiApi.md#UpdateContact) | **Put** /api/contact/{contact_id}/ | 
 [**UpdateDivision**](ApiApi.md#UpdateDivision) | **Put** /api/division/{division_id}/ | 
@@ -381,6 +392,72 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateCasetype
+
+> Casetype CreateCasetype(ctx).Casetype(casetype).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.CreateCasetype(context.Background()).Casetype(casetype).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateCasetype``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateCasetype`: Casetype
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.CreateCasetype`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiCreateCasetypeRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casetype** | [**Casetype**](Casetype.md) |  | 
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -1271,12 +1348,11 @@ import (
     "context"
     "fmt"
     "os"
-    "time"
     openapiclient "./openapi"
 )
 
 func main() {
-    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), time.Now(), int32(123)) // System |  (optional)
+    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
@@ -1712,6 +1788,67 @@ Other parameters are passed through a pointer to a apiListAnalysisstatusRequest 
 [[Back to README]](../README.md)
 
 
+## ListArtifactprioritys
+
+> []Artifactpriority ListArtifactprioritys(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListArtifactprioritys(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListArtifactprioritys``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListArtifactprioritys`: []Artifactpriority
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListArtifactprioritys`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListArtifactprioritysRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Artifactpriority**](Artifactpriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ListArtifacts
 
 > []Artifact ListArtifacts(ctx).Execute()
@@ -1895,6 +2032,67 @@ Other parameters are passed through a pointer to a apiListArtifacttypesRequest s
 [[Back to README]](../README.md)
 
 
+## ListCaseprioritys
+
+> []Casepriority ListCaseprioritys(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListCaseprioritys(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCaseprioritys``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListCaseprioritys`: []Casepriority
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListCaseprioritys`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListCaseprioritysRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Casepriority**](Casepriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ListCases
 
 > []Case ListCases(ctx).Execute()
@@ -1941,6 +2139,128 @@ Other parameters are passed through a pointer to a apiListCasesRequest struct vi
 ### Return type
 
 [**[]Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListCasestatus
+
+> []Casestatus ListCasestatus(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListCasestatus(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCasestatus``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListCasestatus`: []Casestatus
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListCasestatus`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListCasestatusRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Casestatus**](Casestatus.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListCasetypes
+
+> []Casetype ListCasetypes(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListCasetypes(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCasetypes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListCasetypes`: []Casetype
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListCasetypes`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListCasetypesRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -3575,6 +3895,78 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## PartialUpdateCasetype
+
+> Casetype PartialUpdateCasetype(ctx, casetypeId).Casetype(casetype).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casetypeId := "casetypeId_example" // string | A unique integer value identifying this casetype.
+    casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.PartialUpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateCasetype``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `PartialUpdateCasetype`: Casetype
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.PartialUpdateCasetype`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**casetypeId** | **string** | A unique integer value identifying this casetype. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiPartialUpdateCasetypeRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **casetype** | [**Casetype**](Casetype.md) |  | 
+
+### Return type
+
+[**Casetype**](Casetype.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## PartialUpdateCompany
 
 > Company PartialUpdateCompany(ctx, companyId).Company(company).Execute()
@@ -4528,13 +4920,12 @@ import (
     "context"
     "fmt"
     "os"
-    "time"
     openapiclient "./openapi"
 )
 
 func main() {
     systemId := "systemId_example" // string | A unique integer value identifying this system.
-    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), time.Now(), int32(123)) // System |  (optional)
+    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
@@ -5084,6 +5475,76 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## RetrieveArtifactpriority
+
+> Artifactpriority RetrieveArtifactpriority(ctx, artifactpriorityId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    artifactpriorityId := "artifactpriorityId_example" // string | A unique integer value identifying this artifactpriority.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveArtifactpriority(context.Background(), artifactpriorityId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveArtifactpriority``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveArtifactpriority`: Artifactpriority
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveArtifactpriority`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**artifactpriorityId** | **string** | A unique integer value identifying this artifactpriority. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveArtifactpriorityRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Artifactpriority**](Artifactpriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## RetrieveArtifactstatus
 
 > Artifactstatus RetrieveArtifactstatus(ctx, artifactstatusId).Execute()
@@ -5279,6 +5740,216 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveCasepriority
+
+> Casepriority RetrieveCasepriority(ctx, casepriorityId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casepriorityId := "casepriorityId_example" // string | A unique integer value identifying this casepriority.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveCasepriority(context.Background(), casepriorityId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasepriority``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveCasepriority`: Casepriority
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveCasepriority`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**casepriorityId** | **string** | A unique integer value identifying this casepriority. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveCasepriorityRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Casepriority**](Casepriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveCasestatus
+
+> Casestatus RetrieveCasestatus(ctx, casestatusId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casestatusId := "casestatusId_example" // string | A unique integer value identifying this casestatus.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveCasestatus(context.Background(), casestatusId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasestatus``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveCasestatus`: Casestatus
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveCasestatus`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**casestatusId** | **string** | A unique integer value identifying this casestatus. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveCasestatusRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Casestatus**](Casestatus.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveCasetype
+
+> Casetype RetrieveCasetype(ctx, casetypeId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casetypeId := "casetypeId_example" // string | A unique integer value identifying this casetype.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveCasetype(context.Background(), casetypeId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasetype``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveCasetype`: Casetype
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveCasetype`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**casetypeId** | **string** | A unique integer value identifying this casetype. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveCasetypeRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -7120,6 +7791,78 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## UpdateCasetype
+
+> Casetype UpdateCasetype(ctx, casetypeId).Casetype(casetype).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    casetypeId := "casetypeId_example" // string | A unique integer value identifying this casetype.
+    casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.UpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateCasetype``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateCasetype`: Casetype
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.UpdateCasetype`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**casetypeId** | **string** | A unique integer value identifying this casetype. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiUpdateCasetypeRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **casetype** | [**Casetype**](Casetype.md) |  | 
+
+### Return type
+
+[**Casetype**](Casetype.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## UpdateCompany
 
 > Company UpdateCompany(ctx, companyId).Company(company).Execute()
@@ -8073,13 +8816,12 @@ import (
     "context"
     "fmt"
     "os"
-    "time"
     openapiclient "./openapi"
 )
 
 func main() {
     systemId := "systemId_example" // string | A unique integer value identifying this system.
-    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), time.Now(), int32(123)) // System |  (optional)
+    system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
