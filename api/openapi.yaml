@@ -2,7 +2,7 @@ openapi: 3.0.2
 info:
   description: OpenAPI 3 - Documentation of DFIRTrack API
   title: DFIRTrack
-  version: v1.5.3
+  version: v1.5.4
 servers:
 - url: /
 security:
@@ -1399,6 +1399,127 @@ paths:
                 $ref: '#/components/schemas/Domainuser'
       tags:
       - api
+  /api/headline/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listHeadlines
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Headline'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createHeadline
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Headline'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Headline'
+      tags:
+      - api
+  /api/headline/{headline_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveHeadline
+      parameters:
+      - description: A unique integer value identifying this headline.
+        explode: false
+        in: path
+        name: headline_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Headline'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateHeadline
+      parameters:
+      - description: A unique integer value identifying this headline.
+        explode: false
+        in: path
+        name: headline_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Headline'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Headline'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateHeadline
+      parameters:
+      - description: A unique integer value identifying this headline.
+        explode: false
+        in: path
+        name: headline_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Headline'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Headline'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Headline'
+      tags:
+      - api
   /api/ip/:
     get:
       description: 'all objects, allowed: GET + POST'
@@ -1639,6 +1760,163 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Location'
+      tags:
+      - api
+  /api/note/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listNotes
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Note'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createNote
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Note'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Note'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Note'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+      tags:
+      - api
+  /api/note/{note_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveNote
+      parameters:
+      - description: A unique integer value identifying this note.
+        explode: false
+        in: path
+        name: note_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateNote
+      parameters:
+      - description: A unique integer value identifying this note.
+        explode: false
+        in: path
+        name: note_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Note'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Note'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Note'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateNote
+      parameters:
+      - description: A unique integer value identifying this note.
+        explode: false
+        in: path
+        name: note_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Note'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Note'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Note'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+      tags:
+      - api
+  /api/notestatus/:
+    get:
+      description: 'all objects, allowed: GET'
+      operationId: listNotestatus
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Notestatus'
+                type: array
+      tags:
+      - api
+  /api/notestatus/{notestatus_id}/:
+    get:
+      description: 'single object, allowed: GET'
+      operationId: retrieveNotestatus
+      parameters:
+      - description: A unique integer value identifying this notestatus.
+        explode: false
+        in: path
+        name: notestatus_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notestatus'
       tags:
       - api
   /api/os/:
@@ -2123,6 +2401,127 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Recommendation'
+      tags:
+      - api
+  /api/reportitem/:
+    get:
+      description: 'all objects, allowed: GET + POST'
+      operationId: listReportitems
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Reportitem'
+                type: array
+      tags:
+      - api
+    post:
+      description: 'all objects, allowed: GET + POST'
+      operationId: createReportitem
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reportitem'
+      tags:
+      - api
+  /api/reportitem/{reportitem_id}/:
+    get:
+      description: 'single object, allowed: GET + PUT'
+      operationId: retrieveReportitem
+      parameters:
+      - description: A unique integer value identifying this reportitem.
+        explode: false
+        in: path
+        name: reportitem_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reportitem'
+      tags:
+      - api
+    patch:
+      description: 'single object, allowed: GET + PUT'
+      operationId: partialUpdateReportitem
+      parameters:
+      - description: A unique integer value identifying this reportitem.
+        explode: false
+        in: path
+        name: reportitem_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reportitem'
+      tags:
+      - api
+    put:
+      description: 'single object, allowed: GET + PUT'
+      operationId: updateReportitem
+      parameters:
+      - description: A unique integer value identifying this reportitem.
+        explode: false
+        in: path
+        name: reportitem_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Reportitem'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reportitem'
       tags:
       - api
   /api/serviceprovider/:
@@ -3513,6 +3912,20 @@ components:
       - domain
       - domainuser_name
       type: object
+    Headline:
+      example:
+        headline_id: 0
+        headline_name: headline_name
+      properties:
+        headline_id:
+          readOnly: true
+          type: integer
+        headline_name:
+          maxLength: 100
+          type: string
+      required:
+      - headline_name
+      type: object
     Ip:
       example:
         ip_ip: ip_ip
@@ -3539,6 +3952,76 @@ components:
           type: string
       required:
       - location_name
+      type: object
+    Note:
+      example:
+        note_content: note_content
+        note_id: 0
+        note_version: 441289069
+        note_create_time: 2000-01-23T04:56:07.000+00:00
+        note_modified_by_user_id: 7
+        notestatus: 5
+        note_title: note_title
+        note_modify_time: 2000-01-23T04:56:07.000+00:00
+        note_created_by_user_id: 2
+        tag:
+        - 5
+        - 5
+        case: 1
+      properties:
+        note_id:
+          readOnly: true
+          type: integer
+        note_title:
+          maxLength: 250
+          type: string
+        note_content:
+          type: string
+        note_version:
+          maximum: 2147483647
+          minimum: -2147483648
+          type: integer
+        case:
+          nullable: true
+          type: integer
+        notestatus:
+          type: integer
+        tag:
+          items:
+            type: integer
+          type: array
+        note_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+        note_created_by_user_id:
+          type: integer
+        note_modify_time:
+          format: date-time
+          readOnly: true
+          type: string
+        note_modified_by_user_id:
+          type: integer
+      required:
+      - note_content
+      - note_created_by_user_id
+      - note_modified_by_user_id
+      - note_title
+      - note_version
+      type: object
+    Notestatus:
+      example:
+        notestatus_name: notestatus_name
+        notestatus_id: 0
+      properties:
+        notestatus_id:
+          readOnly: true
+          type: integer
+        notestatus_name:
+          maxLength: 30
+          type: string
+      required:
+      - notestatus_name
       type: object
     Os:
       example:
@@ -3595,6 +4078,65 @@ components:
           type: string
       required:
       - recommendation_name
+      type: object
+    Reportitem:
+      example:
+        notestatus: 5
+        reportitem_created_by_user_id: 7
+        system: 5
+        reportitem_note: reportitem_note
+        reportitem_create_time: 2000-01-23T04:56:07.000+00:00
+        reportitem_id: 0
+        reportitem_modify_time: 2000-01-23T04:56:07.000+00:00
+        reportitem_modified_by_user_id: 9
+        tag:
+        - 2
+        - 2
+        headline: 1
+        case: 6
+        reportitem_subheadline: reportitem_subheadline
+      properties:
+        reportitem_id:
+          readOnly: true
+          type: integer
+        case:
+          nullable: true
+          type: integer
+        headline:
+          type: integer
+        notestatus:
+          type: integer
+        system:
+          type: integer
+        tag:
+          items:
+            type: integer
+          type: array
+        reportitem_subheadline:
+          maxLength: 100
+          nullable: true
+          type: string
+        reportitem_note:
+          type: string
+        reportitem_create_time:
+          format: date-time
+          readOnly: true
+          type: string
+        reportitem_created_by_user_id:
+          type: integer
+        reportitem_modify_time:
+          format: date-time
+          readOnly: true
+          type: string
+        reportitem_modified_by_user_id:
+          type: integer
+      required:
+      - headline
+      - reportitem_created_by_user_id
+      - reportitem_modified_by_user_id
+      - reportitem_note
+      - reportitem_subheadline
+      - system
       type: object
     Serviceprovider:
       example:

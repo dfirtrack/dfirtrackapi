@@ -15,12 +15,15 @@ Method | HTTP request | Description
 [**CreateDnsname**](ApiApi.md#CreateDnsname) | **Post** /api/dnsname/ | 
 [**CreateDomain**](ApiApi.md#CreateDomain) | **Post** /api/domain/ | 
 [**CreateDomainuser**](ApiApi.md#CreateDomainuser) | **Post** /api/domainuser/ | 
+[**CreateHeadline**](ApiApi.md#CreateHeadline) | **Post** /api/headline/ | 
 [**CreateIp**](ApiApi.md#CreateIp) | **Post** /api/ip/ | 
 [**CreateLocation**](ApiApi.md#CreateLocation) | **Post** /api/location/ | 
+[**CreateNote**](ApiApi.md#CreateNote) | **Post** /api/note/ | 
 [**CreateOs**](ApiApi.md#CreateOs) | **Post** /api/os/ | 
 [**CreateOsarch**](ApiApi.md#CreateOsarch) | **Post** /api/osarch/ | 
 [**CreateReason**](ApiApi.md#CreateReason) | **Post** /api/reason/ | 
 [**CreateRecommendation**](ApiApi.md#CreateRecommendation) | **Post** /api/recommendation/ | 
+[**CreateReportitem**](ApiApi.md#CreateReportitem) | **Post** /api/reportitem/ | 
 [**CreateServiceprovider**](ApiApi.md#CreateServiceprovider) | **Post** /api/serviceprovider/ | 
 [**CreateSystem**](ApiApi.md#CreateSystem) | **Post** /api/system/ | 
 [**CreateSystemtype**](ApiApi.md#CreateSystemtype) | **Post** /api/systemtype/ | 
@@ -43,12 +46,16 @@ Method | HTTP request | Description
 [**ListDnsnames**](ApiApi.md#ListDnsnames) | **Get** /api/dnsname/ | 
 [**ListDomains**](ApiApi.md#ListDomains) | **Get** /api/domain/ | 
 [**ListDomainusers**](ApiApi.md#ListDomainusers) | **Get** /api/domainuser/ | 
+[**ListHeadlines**](ApiApi.md#ListHeadlines) | **Get** /api/headline/ | 
 [**ListIps**](ApiApi.md#ListIps) | **Get** /api/ip/ | 
 [**ListLocations**](ApiApi.md#ListLocations) | **Get** /api/location/ | 
+[**ListNotes**](ApiApi.md#ListNotes) | **Get** /api/note/ | 
+[**ListNotestatus**](ApiApi.md#ListNotestatus) | **Get** /api/notestatus/ | 
 [**ListOs**](ApiApi.md#ListOs) | **Get** /api/os/ | 
 [**ListOsarchs**](ApiApi.md#ListOsarchs) | **Get** /api/osarch/ | 
 [**ListReasons**](ApiApi.md#ListReasons) | **Get** /api/reason/ | 
 [**ListRecommendations**](ApiApi.md#ListRecommendations) | **Get** /api/recommendation/ | 
+[**ListReportitems**](ApiApi.md#ListReportitems) | **Get** /api/reportitem/ | 
 [**ListServiceproviders**](ApiApi.md#ListServiceproviders) | **Get** /api/serviceprovider/ | 
 [**ListSystems**](ApiApi.md#ListSystems) | **Get** /api/system/ | 
 [**ListSystemstatus**](ApiApi.md#ListSystemstatus) | **Get** /api/systemstatus/ | 
@@ -70,12 +77,15 @@ Method | HTTP request | Description
 [**PartialUpdateDnsname**](ApiApi.md#PartialUpdateDnsname) | **Patch** /api/dnsname/{dnsname_id}/ | 
 [**PartialUpdateDomain**](ApiApi.md#PartialUpdateDomain) | **Patch** /api/domain/{domain_id}/ | 
 [**PartialUpdateDomainuser**](ApiApi.md#PartialUpdateDomainuser) | **Patch** /api/domainuser/{domainuser_id}/ | 
+[**PartialUpdateHeadline**](ApiApi.md#PartialUpdateHeadline) | **Patch** /api/headline/{headline_id}/ | 
 [**PartialUpdateIp**](ApiApi.md#PartialUpdateIp) | **Patch** /api/ip/{ip_id}/ | 
 [**PartialUpdateLocation**](ApiApi.md#PartialUpdateLocation) | **Patch** /api/location/{location_id}/ | 
+[**PartialUpdateNote**](ApiApi.md#PartialUpdateNote) | **Patch** /api/note/{note_id}/ | 
 [**PartialUpdateOs**](ApiApi.md#PartialUpdateOs) | **Patch** /api/os/{os_id}/ | 
 [**PartialUpdateOsarch**](ApiApi.md#PartialUpdateOsarch) | **Patch** /api/osarch/{osarch_id}/ | 
 [**PartialUpdateReason**](ApiApi.md#PartialUpdateReason) | **Patch** /api/reason/{reason_id}/ | 
 [**PartialUpdateRecommendation**](ApiApi.md#PartialUpdateRecommendation) | **Patch** /api/recommendation/{recommendation_id}/ | 
+[**PartialUpdateReportitem**](ApiApi.md#PartialUpdateReportitem) | **Patch** /api/reportitem/{reportitem_id}/ | 
 [**PartialUpdateServiceprovider**](ApiApi.md#PartialUpdateServiceprovider) | **Patch** /api/serviceprovider/{serviceprovider_id}/ | 
 [**PartialUpdateSystem**](ApiApi.md#PartialUpdateSystem) | **Patch** /api/system/{system_id}/ | 
 [**PartialUpdateSystemtype**](ApiApi.md#PartialUpdateSystemtype) | **Patch** /api/systemtype/{systemtype_id}/ | 
@@ -98,12 +108,16 @@ Method | HTTP request | Description
 [**RetrieveDnsname**](ApiApi.md#RetrieveDnsname) | **Get** /api/dnsname/{dnsname_id}/ | 
 [**RetrieveDomain**](ApiApi.md#RetrieveDomain) | **Get** /api/domain/{domain_id}/ | 
 [**RetrieveDomainuser**](ApiApi.md#RetrieveDomainuser) | **Get** /api/domainuser/{domainuser_id}/ | 
+[**RetrieveHeadline**](ApiApi.md#RetrieveHeadline) | **Get** /api/headline/{headline_id}/ | 
 [**RetrieveIp**](ApiApi.md#RetrieveIp) | **Get** /api/ip/{ip_id}/ | 
 [**RetrieveLocation**](ApiApi.md#RetrieveLocation) | **Get** /api/location/{location_id}/ | 
+[**RetrieveNote**](ApiApi.md#RetrieveNote) | **Get** /api/note/{note_id}/ | 
+[**RetrieveNotestatus**](ApiApi.md#RetrieveNotestatus) | **Get** /api/notestatus/{notestatus_id}/ | 
 [**RetrieveOs**](ApiApi.md#RetrieveOs) | **Get** /api/os/{os_id}/ | 
 [**RetrieveOsarch**](ApiApi.md#RetrieveOsarch) | **Get** /api/osarch/{osarch_id}/ | 
 [**RetrieveReason**](ApiApi.md#RetrieveReason) | **Get** /api/reason/{reason_id}/ | 
 [**RetrieveRecommendation**](ApiApi.md#RetrieveRecommendation) | **Get** /api/recommendation/{recommendation_id}/ | 
+[**RetrieveReportitem**](ApiApi.md#RetrieveReportitem) | **Get** /api/reportitem/{reportitem_id}/ | 
 [**RetrieveServiceprovider**](ApiApi.md#RetrieveServiceprovider) | **Get** /api/serviceprovider/{serviceprovider_id}/ | 
 [**RetrieveSystem**](ApiApi.md#RetrieveSystem) | **Get** /api/system/{system_id}/ | 
 [**RetrieveSystemstatus**](ApiApi.md#RetrieveSystemstatus) | **Get** /api/systemstatus/{systemstatus_id}/ | 
@@ -125,12 +139,15 @@ Method | HTTP request | Description
 [**UpdateDnsname**](ApiApi.md#UpdateDnsname) | **Put** /api/dnsname/{dnsname_id}/ | 
 [**UpdateDomain**](ApiApi.md#UpdateDomain) | **Put** /api/domain/{domain_id}/ | 
 [**UpdateDomainuser**](ApiApi.md#UpdateDomainuser) | **Put** /api/domainuser/{domainuser_id}/ | 
+[**UpdateHeadline**](ApiApi.md#UpdateHeadline) | **Put** /api/headline/{headline_id}/ | 
 [**UpdateIp**](ApiApi.md#UpdateIp) | **Put** /api/ip/{ip_id}/ | 
 [**UpdateLocation**](ApiApi.md#UpdateLocation) | **Put** /api/location/{location_id}/ | 
+[**UpdateNote**](ApiApi.md#UpdateNote) | **Put** /api/note/{note_id}/ | 
 [**UpdateOs**](ApiApi.md#UpdateOs) | **Put** /api/os/{os_id}/ | 
 [**UpdateOsarch**](ApiApi.md#UpdateOsarch) | **Put** /api/osarch/{osarch_id}/ | 
 [**UpdateReason**](ApiApi.md#UpdateReason) | **Put** /api/reason/{reason_id}/ | 
 [**UpdateRecommendation**](ApiApi.md#UpdateRecommendation) | **Put** /api/recommendation/{recommendation_id}/ | 
+[**UpdateReportitem**](ApiApi.md#UpdateReportitem) | **Put** /api/reportitem/{reportitem_id}/ | 
 [**UpdateServiceprovider**](ApiApi.md#UpdateServiceprovider) | **Put** /api/serviceprovider/{serviceprovider_id}/ | 
 [**UpdateSystem**](ApiApi.md#UpdateSystem) | **Put** /api/system/{system_id}/ | 
 [**UpdateSystemtype**](ApiApi.md#UpdateSystemtype) | **Put** /api/systemtype/{systemtype_id}/ | 
@@ -869,6 +886,72 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## CreateHeadline
+
+> Headline CreateHeadline(ctx).Headline(headline).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.CreateHeadline(context.Background()).Headline(headline).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateHeadline``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateHeadline`: Headline
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.CreateHeadline`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiCreateHeadlineRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **headline** | [**Headline**](Headline.md) |  | 
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## CreateIp
 
 > Ip CreateIp(ctx).Ip(ip).Execute()
@@ -986,6 +1069,72 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateNote
+
+> Note CreateNote(ctx).Note(note).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.CreateNote(context.Background()).Note(note).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateNote``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateNote`: Note
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.CreateNote`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiCreateNoteRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **note** | [**Note**](Note.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -1250,6 +1399,72 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateReportitem
+
+> Reportitem CreateReportitem(ctx).Reportitem(reportitem).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.CreateReportitem(context.Background()).Reportitem(reportitem).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateReportitem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateReportitem`: Reportitem
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.CreateReportitem`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiCreateReportitemRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reportitem** | [**Reportitem**](Reportitem.md) |  | 
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -2642,6 +2857,67 @@ Other parameters are passed through a pointer to a apiListDomainusersRequest str
 [[Back to README]](../README.md)
 
 
+## ListHeadlines
+
+> []Headline ListHeadlines(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListHeadlines(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListHeadlines``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListHeadlines`: []Headline
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListHeadlines`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListHeadlinesRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ListIps
 
 > []Ip ListIps(ctx).Execute()
@@ -2749,6 +3025,128 @@ Other parameters are passed through a pointer to a apiListLocationsRequest struc
 ### Return type
 
 [**[]Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListNotes
+
+> []Note ListNotes(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListNotes(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListNotes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListNotes`: []Note
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListNotes`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListNotesRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Note**](Note.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListNotestatus
+
+> []Notestatus ListNotestatus(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListNotestatus(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListNotestatus``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListNotestatus`: []Notestatus
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListNotestatus`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListNotestatusRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Notestatus**](Notestatus.md)
 
 ### Authorization
 
@@ -2993,6 +3391,67 @@ Other parameters are passed through a pointer to a apiListRecommendationsRequest
 ### Return type
 
 [**[]Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListReportitems
+
+> []Reportitem ListReportitems(ctx).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.ListReportitems(context.Background()).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListReportitems``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListReportitems`: []Reportitem
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.ListReportitems`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+This endpoint does not need any parameter.
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListReportitemsRequest struct via the builder pattern
+
+
+### Return type
+
+[**[]Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -4399,6 +4858,78 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## PartialUpdateHeadline
+
+> Headline PartialUpdateHeadline(ctx, headlineId).Headline(headline).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    headlineId := "headlineId_example" // string | A unique integer value identifying this headline.
+    headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.PartialUpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateHeadline``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `PartialUpdateHeadline`: Headline
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.PartialUpdateHeadline`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**headlineId** | **string** | A unique integer value identifying this headline. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiPartialUpdateHeadlineRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **headline** | [**Headline**](Headline.md) |  | 
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## PartialUpdateIp
 
 > Ip PartialUpdateIp(ctx, ipId).Ip(ip).Execute()
@@ -4528,6 +5059,78 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## PartialUpdateNote
+
+> Note PartialUpdateNote(ctx, noteId).Note(note).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    noteId := "noteId_example" // string | A unique integer value identifying this note.
+    note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.PartialUpdateNote(context.Background(), noteId).Note(note).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateNote``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `PartialUpdateNote`: Note
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.PartialUpdateNote`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**noteId** | **string** | A unique integer value identifying this note. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiPartialUpdateNoteRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **note** | [**Note**](Note.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -4816,6 +5419,78 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## PartialUpdateReportitem
+
+> Reportitem PartialUpdateReportitem(ctx, reportitemId).Reportitem(reportitem).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    reportitemId := "reportitemId_example" // string | A unique integer value identifying this reportitem.
+    reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.PartialUpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateReportitem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `PartialUpdateReportitem`: Reportitem
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.PartialUpdateReportitem`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**reportitemId** | **string** | A unique integer value identifying this reportitem. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiPartialUpdateReportitemRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **reportitem** | [**Reportitem**](Reportitem.md) |  | 
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -6385,6 +7060,76 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## RetrieveHeadline
+
+> Headline RetrieveHeadline(ctx, headlineId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    headlineId := "headlineId_example" // string | A unique integer value identifying this headline.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveHeadline(context.Background(), headlineId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveHeadline``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveHeadline`: Headline
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveHeadline`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**headlineId** | **string** | A unique integer value identifying this headline. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveHeadlineRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## RetrieveIp
 
 > Ip RetrieveIp(ctx, ipId).Execute()
@@ -6510,6 +7255,146 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveNote
+
+> Note RetrieveNote(ctx, noteId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    noteId := "noteId_example" // string | A unique integer value identifying this note.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveNote(context.Background(), noteId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveNote``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveNote`: Note
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveNote`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**noteId** | **string** | A unique integer value identifying this note. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveNoteRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveNotestatus
+
+> Notestatus RetrieveNotestatus(ctx, notestatusId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    notestatusId := "notestatusId_example" // string | A unique integer value identifying this notestatus.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveNotestatus(context.Background(), notestatusId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveNotestatus``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveNotestatus`: Notestatus
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveNotestatus`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**notestatusId** | **string** | A unique integer value identifying this notestatus. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveNotestatusRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Notestatus**](Notestatus.md)
 
 ### Authorization
 
@@ -6790,6 +7675,76 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RetrieveReportitem
+
+> Reportitem RetrieveReportitem(ctx, reportitemId).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    reportitemId := "reportitemId_example" // string | A unique integer value identifying this reportitem.
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.RetrieveReportitem(context.Background(), reportitemId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveReportitem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `RetrieveReportitem`: Reportitem
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.RetrieveReportitem`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**reportitemId** | **string** | A unique integer value identifying this reportitem. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiRetrieveReportitemRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -8295,6 +9250,78 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## UpdateHeadline
+
+> Headline UpdateHeadline(ctx, headlineId).Headline(headline).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    headlineId := "headlineId_example" // string | A unique integer value identifying this headline.
+    headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.UpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateHeadline``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateHeadline`: Headline
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.UpdateHeadline`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**headlineId** | **string** | A unique integer value identifying this headline. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiUpdateHeadlineRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **headline** | [**Headline**](Headline.md) |  | 
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## UpdateIp
 
 > Ip UpdateIp(ctx, ipId).Ip(ip).Execute()
@@ -8424,6 +9451,78 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateNote
+
+> Note UpdateNote(ctx, noteId).Note(note).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    noteId := "noteId_example" // string | A unique integer value identifying this note.
+    note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.UpdateNote(context.Background(), noteId).Note(note).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateNote``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateNote`: Note
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.UpdateNote`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**noteId** | **string** | A unique integer value identifying this note. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiUpdateNoteRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **note** | [**Note**](Note.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -8712,6 +9811,78 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateReportitem
+
+> Reportitem UpdateReportitem(ctx, reportitemId).Reportitem(reportitem).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    reportitemId := "reportitemId_example" // string | A unique integer value identifying this reportitem.
+    reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApiApi.UpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateReportitem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateReportitem`: Reportitem
+    fmt.Fprintf(os.Stdout, "Response from `ApiApi.UpdateReportitem`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**reportitemId** | **string** | A unique integer value identifying this reportitem. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiUpdateReportitemRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **reportitem** | [**Reportitem**](Reportitem.md) |  | 
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
