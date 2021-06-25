@@ -2,7 +2,7 @@ openapi: 3.0.2
 info:
   description: OpenAPI 3 - Documentation of DFIRTrack API
   title: DFIRTrack
-  version: v1.5.4
+  version: v1.5.5
 servers:
 - url: /
 security:
