@@ -4346,6 +4346,7 @@ components:
       type: object
     Tag:
       example:
+        tag_note: tag_note
         tag_name: tag_name
         tagcolor: 6
         tag_id: 0
@@ -4355,6 +4356,9 @@ components:
           type: integer
         tag_name:
           maxLength: 50
+          type: string
+        tag_note:
+          nullable: true
           type: string
         tagcolor:
           type: integer

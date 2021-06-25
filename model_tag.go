@@ -18,6 +18,7 @@ import (
 type Tag struct {
 	TagId *int32 `json:"tag_id,omitempty"`
 	TagName string `json:"tag_name"`
+	TagNote NullableString `json:"tag_note,omitempty"`
 	Tagcolor int32 `json:"tagcolor"`
 }
 
@@ -96,6 +97,48 @@ func (o *Tag) SetTagName(v string) {
 	o.TagName = v
 }
 
+// GetTagNote returns the TagNote field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *Tag) GetTagNote() string {
+	if o == nil || o.TagNote.Get() == nil {
+		var ret string
+		return ret
+	}
+	return *o.TagNote.Get()
+}
+
+// GetTagNoteOk returns a tuple with the TagNote field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *Tag) GetTagNoteOk() (*string, bool) {
+	if o == nil  {
+		return nil, false
+	}
+	return o.TagNote.Get(), o.TagNote.IsSet()
+}
+
+// HasTagNote returns a boolean if a field has been set.
+func (o *Tag) HasTagNote() bool {
+	if o != nil && o.TagNote.IsSet() {
+		return true
+	}
+
+	return false
+}
+
+// SetTagNote gets a reference to the given NullableString and assigns it to the TagNote field.
+func (o *Tag) SetTagNote(v string) {
+	o.TagNote.Set(&v)
+}
+// SetTagNoteNil sets the value for TagNote to be an explicit nil
+func (o *Tag) SetTagNoteNil() {
+	o.TagNote.Set(nil)
+}
+
+// UnsetTagNote ensures that no value is present for TagNote, not even an explicit nil
+func (o *Tag) UnsetTagNote() {
+	o.TagNote.Unset()
+}
+
 // GetTagcolor returns the Tagcolor field value
 func (o *Tag) GetTagcolor() int32 {
 	if o == nil  {
@@ -127,6 +170,9 @@ func (o Tag) MarshalJSON() ([]byte, error) {
 	}
 	if true {
 		toSerialize["tag_name"] = o.TagName
+	}
+	if o.TagNote.IsSet() {
+		toSerialize["tag_note"] = o.TagNote.Get()
 	}
 	if true {
 		toSerialize["tagcolor"] = o.Tagcolor

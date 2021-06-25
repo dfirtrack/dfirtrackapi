@@ -322,5 +322,3 @@ Each of these functions takes a value of the given basic type and returns a poin
 ## Author
 
 - n3x77 - Sven Ulke - [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40n3x771)](https://twitter.com/n3x771)
-
-

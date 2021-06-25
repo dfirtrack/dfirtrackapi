@@ -4133,6 +4133,9 @@ components:
         tag_name:
           type: string
           maxLength: 50
+        tag_note:
+          type: string
+          nullable: true
         tagcolor:
           type: integer
       required:

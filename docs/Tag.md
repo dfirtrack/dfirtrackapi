@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TagId** | Pointer to **int32** |  | [optional] [readonly] 
 **TagName** | **string** |  | 
+**TagNote** | Pointer to **NullableString** |  | [optional] 
 **Tagcolor** | **int32** |  | 
 
 ## Methods
@@ -72,6 +73,41 @@ and a boolean to check if the value has been set.
 SetTagName sets TagName field to given value.
 
 
+### GetTagNote
+
+`func (o *Tag) GetTagNote() string`
+
+GetTagNote returns the TagNote field if non-nil, zero value otherwise.
+
+### GetTagNoteOk
+
+`func (o *Tag) GetTagNoteOk() (*string, bool)`
+
+GetTagNoteOk returns a tuple with the TagNote field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTagNote
+
+`func (o *Tag) SetTagNote(v string)`
+
+SetTagNote sets TagNote field to given value.
+
+### HasTagNote
+
+`func (o *Tag) HasTagNote() bool`
+
+HasTagNote returns a boolean if a field has been set.
+
+### SetTagNoteNil
+
+`func (o *Tag) SetTagNoteNil(b bool)`
+
+ SetTagNoteNil sets the value for TagNote to be an explicit nil
+
+### UnsetTagNote
+`func (o *Tag) UnsetTagNote()`
+
+UnsetTagNote ensures that no value is present for TagNote, not even an explicit nil
 ### GetTagcolor
 
 `func (o *Tag) GetTagcolor() int32`
