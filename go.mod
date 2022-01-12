@@ -1,5 +1,7 @@
 module github.com/dfirtrack/dfirtrackapi
 
-go 1.16
+go 1.13
 
-require golang.org/x/oauth2 v0.0.0-20210622215436-a8dc77f794b6
+require (
+	golang.org/x/oauth2 v0.0.0-20210218202405-ba52d332ba99
+)
