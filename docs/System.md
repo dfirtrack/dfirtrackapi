@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **SystemCreatedByUserId** | **int32** |  | 
 **SystemModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **SystemModifiedByUserId** | **int32** |  | 
+**SystemAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 **SystemExportMarkdown** | Pointer to **bool** |  | [optional] 
 **SystemExportSpreadsheet** | Pointer to **bool** |  | [optional] 
 
@@ -858,6 +859,41 @@ and a boolean to check if the value has been set.
 SetSystemModifiedByUserId sets SystemModifiedByUserId field to given value.
 
 
+### GetSystemAssignedToUserId
+
+`func (o *System) GetSystemAssignedToUserId() int32`
+
+GetSystemAssignedToUserId returns the SystemAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetSystemAssignedToUserIdOk
+
+`func (o *System) GetSystemAssignedToUserIdOk() (*int32, bool)`
+
+GetSystemAssignedToUserIdOk returns a tuple with the SystemAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSystemAssignedToUserId
+
+`func (o *System) SetSystemAssignedToUserId(v int32)`
+
+SetSystemAssignedToUserId sets SystemAssignedToUserId field to given value.
+
+### HasSystemAssignedToUserId
+
+`func (o *System) HasSystemAssignedToUserId() bool`
+
+HasSystemAssignedToUserId returns a boolean if a field has been set.
+
+### SetSystemAssignedToUserIdNil
+
+`func (o *System) SetSystemAssignedToUserIdNil(b bool)`
+
+ SetSystemAssignedToUserIdNil sets the value for SystemAssignedToUserId to be an explicit nil
+
+### UnsetSystemAssignedToUserId
+`func (o *System) UnsetSystemAssignedToUserId()`
+
+UnsetSystemAssignedToUserId ensures that no value is present for SystemAssignedToUserId, not even an explicit nil
 ### GetSystemExportMarkdown
 
 `func (o *System) GetSystemExportMarkdown() bool`

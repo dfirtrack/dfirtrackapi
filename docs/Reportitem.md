@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **ReportitemCreatedByUserId** | **int32** |  | 
 **ReportitemModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **ReportitemModifiedByUserId** | **int32** |  | 
+**ReportitemAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -326,6 +327,41 @@ and a boolean to check if the value has been set.
 SetReportitemModifiedByUserId sets ReportitemModifiedByUserId field to given value.
 
 
+### GetReportitemAssignedToUserId
+
+`func (o *Reportitem) GetReportitemAssignedToUserId() int32`
+
+GetReportitemAssignedToUserId returns the ReportitemAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetReportitemAssignedToUserIdOk
+
+`func (o *Reportitem) GetReportitemAssignedToUserIdOk() (*int32, bool)`
+
+GetReportitemAssignedToUserIdOk returns a tuple with the ReportitemAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetReportitemAssignedToUserId
+
+`func (o *Reportitem) SetReportitemAssignedToUserId(v int32)`
+
+SetReportitemAssignedToUserId sets ReportitemAssignedToUserId field to given value.
+
+### HasReportitemAssignedToUserId
+
+`func (o *Reportitem) HasReportitemAssignedToUserId() bool`
+
+HasReportitemAssignedToUserId returns a boolean if a field has been set.
+
+### SetReportitemAssignedToUserIdNil
+
+`func (o *Reportitem) SetReportitemAssignedToUserIdNil(b bool)`
+
+ SetReportitemAssignedToUserIdNil sets the value for ReportitemAssignedToUserId to be an explicit nil
+
+### UnsetReportitemAssignedToUserId
+`func (o *Reportitem) UnsetReportitemAssignedToUserId()`
+
+UnsetReportitemAssignedToUserId ensures that no value is present for ReportitemAssignedToUserId, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

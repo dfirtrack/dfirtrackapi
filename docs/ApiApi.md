@@ -182,8 +182,8 @@ func main() {
     artifact := *openapiclient.NewArtifact("ArtifactName_example", int32(123), int32(123), int32(123), int32(123)) // Artifact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateArtifact(context.Background()).Artifact(artifact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateArtifact(context.Background()).Artifact(artifact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateArtifact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -248,8 +248,8 @@ func main() {
     artifacttype := *openapiclient.NewArtifacttype("ArtifacttypeName_example") // Artifacttype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateArtifacttype(context.Background()).Artifacttype(artifacttype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateArtifacttype(context.Background()).Artifacttype(artifacttype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateArtifacttype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -314,8 +314,8 @@ func main() {
     token := "token_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateAuthToken(context.Background()).Username(username).Password(password).Token(token).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateAuthToken(context.Background()).Username(username).Password(password).Token(token).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateAuthToken``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -382,8 +382,8 @@ func main() {
     case_ := *openapiclient.NewCase("CaseName_example", false, int32(123)) // Case |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateCase(context.Background()).Case_(case_).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateCase(context.Background()).Case_(case_).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateCase``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -448,8 +448,8 @@ func main() {
     casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateCasetype(context.Background()).Casetype(casetype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateCasetype(context.Background()).Casetype(casetype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateCasetype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -514,8 +514,8 @@ func main() {
     company := *openapiclient.NewCompany("CompanyName_example") // Company |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateCompany(context.Background()).Company(company).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateCompany(context.Background()).Company(company).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -580,8 +580,8 @@ func main() {
     contact := *openapiclient.NewContact("ContactName_example", "ContactEmail_example") // Contact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateContact(context.Background()).Contact(contact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateContact(context.Background()).Contact(contact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateContact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -646,8 +646,8 @@ func main() {
     division := *openapiclient.NewDivision("DivisionName_example") // Division |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateDivision(context.Background()).Division(division).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateDivision(context.Background()).Division(division).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateDivision``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -712,8 +712,8 @@ func main() {
     dnsname := *openapiclient.NewDnsname("DnsnameName_example") // Dnsname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateDnsname(context.Background()).Dnsname(dnsname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateDnsname(context.Background()).Dnsname(dnsname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateDnsname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -778,8 +778,8 @@ func main() {
     domain := *openapiclient.NewDomain("DomainName_example") // Domain |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateDomain(context.Background()).Domain(domain).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateDomain(context.Background()).Domain(domain).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateDomain``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -844,8 +844,8 @@ func main() {
     domainuser := *openapiclient.NewDomainuser("DomainuserName_example", int32(123)) // Domainuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateDomainuser(context.Background()).Domainuser(domainuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateDomainuser(context.Background()).Domainuser(domainuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateDomainuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -910,8 +910,8 @@ func main() {
     headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateHeadline(context.Background()).Headline(headline).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateHeadline(context.Background()).Headline(headline).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateHeadline``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -976,8 +976,8 @@ func main() {
     ip := *openapiclient.NewIp("IpIp_example") // Ip |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateIp(context.Background()).Ip(ip).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateIp(context.Background()).Ip(ip).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateIp``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1042,8 +1042,8 @@ func main() {
     location := *openapiclient.NewLocation("LocationName_example") // Location |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateLocation(context.Background()).Location(location).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateLocation(context.Background()).Location(location).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateLocation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1108,8 +1108,8 @@ func main() {
     note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateNote(context.Background()).Note(note).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateNote(context.Background()).Note(note).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateNote``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1174,8 +1174,8 @@ func main() {
     os := *openapiclient.NewOs("OsName_example") // Os |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateOs(context.Background()).Os(os).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateOs(context.Background()).Os(os).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateOs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1240,8 +1240,8 @@ func main() {
     osarch := *openapiclient.NewOsarch("OsarchName_example") // Osarch |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateOsarch(context.Background()).Osarch(osarch).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateOsarch(context.Background()).Osarch(osarch).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateOsarch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1306,8 +1306,8 @@ func main() {
     reason := *openapiclient.NewReason("ReasonName_example") // Reason |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateReason(context.Background()).Reason(reason).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateReason(context.Background()).Reason(reason).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateReason``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1372,8 +1372,8 @@ func main() {
     recommendation := *openapiclient.NewRecommendation("RecommendationName_example") // Recommendation |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateRecommendation(context.Background()).Recommendation(recommendation).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateRecommendation(context.Background()).Recommendation(recommendation).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateRecommendation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1438,8 +1438,8 @@ func main() {
     reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateReportitem(context.Background()).Reportitem(reportitem).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateReportitem(context.Background()).Reportitem(reportitem).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateReportitem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1504,8 +1504,8 @@ func main() {
     serviceprovider := *openapiclient.NewServiceprovider("ServiceproviderName_example") // Serviceprovider |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateServiceprovider(context.Background()).Serviceprovider(serviceprovider).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateServiceprovider(context.Background()).Serviceprovider(serviceprovider).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateServiceprovider``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1570,8 +1570,8 @@ func main() {
     system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateSystem(context.Background()).System(system).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateSystem(context.Background()).System(system).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateSystem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1636,8 +1636,8 @@ func main() {
     systemtype := *openapiclient.NewSystemtype("SystemtypeName_example") // Systemtype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateSystemtype(context.Background()).Systemtype(systemtype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateSystemtype(context.Background()).Systemtype(systemtype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateSystemtype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1702,8 +1702,8 @@ func main() {
     systemuser := *openapiclient.NewSystemuser("SystemuserName_example", int32(123)) // Systemuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateSystemuser(context.Background()).Systemuser(systemuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateSystemuser(context.Background()).Systemuser(systemuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateSystemuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1768,8 +1768,8 @@ func main() {
     tag := *openapiclient.NewTag("TagName_example", int32(123)) // Tag |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateTag(context.Background()).Tag(tag).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateTag(context.Background()).Tag(tag).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateTag``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1834,8 +1834,8 @@ func main() {
     task := *openapiclient.NewTask(int32(123), int32(123), int32(123), int32(123), int32(123)) // Task |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateTask(context.Background()).Task(task).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateTask(context.Background()).Task(task).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1900,8 +1900,8 @@ func main() {
     taskname := *openapiclient.NewTaskname("TasknameName_example") // Taskname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.CreateTaskname(context.Background()).Taskname(taskname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.CreateTaskname(context.Background()).Taskname(taskname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.CreateTaskname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1965,8 +1965,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListAnalysisstatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListAnalysisstatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListAnalysisstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2026,8 +2026,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListArtifactprioritys(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListArtifactprioritys(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListArtifactprioritys``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2087,8 +2087,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListArtifacts(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListArtifacts(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListArtifacts``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2148,8 +2148,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListArtifactstatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListArtifactstatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListArtifactstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2209,8 +2209,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListArtifacttypes(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListArtifacttypes(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListArtifacttypes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2270,8 +2270,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListCaseprioritys(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListCaseprioritys(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCaseprioritys``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2331,8 +2331,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListCases(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListCases(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCases``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2392,8 +2392,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListCasestatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListCasestatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCasestatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2453,8 +2453,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListCasetypes(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListCasetypes(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCasetypes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2514,8 +2514,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListCompanys(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListCompanys(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListCompanys``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2575,8 +2575,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListContacts(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListContacts(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListContacts``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2636,8 +2636,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListDivisions(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListDivisions(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListDivisions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2697,8 +2697,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListDnsnames(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListDnsnames(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListDnsnames``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2758,8 +2758,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListDomains(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListDomains(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListDomains``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2819,8 +2819,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListDomainusers(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListDomainusers(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListDomainusers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2880,8 +2880,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListHeadlines(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListHeadlines(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListHeadlines``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2941,8 +2941,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListIps(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListIps(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListIps``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3002,8 +3002,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListLocations(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListLocations(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListLocations``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3063,8 +3063,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListNotes(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListNotes(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListNotes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3124,8 +3124,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListNotestatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListNotestatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListNotestatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3185,8 +3185,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListOs(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListOs(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListOs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3246,8 +3246,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListOsarchs(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListOsarchs(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListOsarchs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3307,8 +3307,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListReasons(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListReasons(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListReasons``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3368,8 +3368,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListRecommendations(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListRecommendations(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListRecommendations``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3429,8 +3429,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListReportitems(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListReportitems(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListReportitems``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3490,8 +3490,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListServiceproviders(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListServiceproviders(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListServiceproviders``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3551,8 +3551,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListSystems(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListSystems(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListSystems``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3612,8 +3612,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListSystemstatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListSystemstatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListSystemstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3673,8 +3673,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListSystemtypes(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListSystemtypes(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListSystemtypes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3734,8 +3734,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListSystemusers(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListSystemusers(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListSystemusers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3795,8 +3795,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTagcolors(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTagcolors(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTagcolors``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3856,8 +3856,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTags(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTags(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTags``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3917,8 +3917,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTasknames(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTasknames(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTasknames``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3978,8 +3978,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTaskprioritys(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTaskprioritys(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTaskprioritys``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4039,8 +4039,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTasks(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTasks(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTasks``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4100,8 +4100,8 @@ import (
 func main() {
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.ListTaskstatus(context.Background()).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.ListTaskstatus(context.Background()).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.ListTaskstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4163,8 +4163,8 @@ func main() {
     artifact := *openapiclient.NewArtifact("ArtifactName_example", int32(123), int32(123), int32(123), int32(123)) // Artifact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateArtifact(context.Background(), artifactId).Artifact(artifact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateArtifact(context.Background(), artifactId).Artifact(artifact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateArtifact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4235,8 +4235,8 @@ func main() {
     artifacttype := *openapiclient.NewArtifacttype("ArtifacttypeName_example") // Artifacttype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateArtifacttype(context.Background(), artifacttypeId).Artifacttype(artifacttype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateArtifacttype(context.Background(), artifacttypeId).Artifacttype(artifacttype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateArtifacttype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4307,8 +4307,8 @@ func main() {
     case_ := *openapiclient.NewCase("CaseName_example", false, int32(123)) // Case |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateCase(context.Background(), caseId).Case_(case_).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateCase(context.Background(), caseId).Case_(case_).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateCase``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4379,8 +4379,8 @@ func main() {
     casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateCasetype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4451,8 +4451,8 @@ func main() {
     company := *openapiclient.NewCompany("CompanyName_example") // Company |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateCompany(context.Background(), companyId).Company(company).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateCompany(context.Background(), companyId).Company(company).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4523,8 +4523,8 @@ func main() {
     contact := *openapiclient.NewContact("ContactName_example", "ContactEmail_example") // Contact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateContact(context.Background(), contactId).Contact(contact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateContact(context.Background(), contactId).Contact(contact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateContact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4595,8 +4595,8 @@ func main() {
     division := *openapiclient.NewDivision("DivisionName_example") // Division |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateDivision(context.Background(), divisionId).Division(division).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateDivision(context.Background(), divisionId).Division(division).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateDivision``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4667,8 +4667,8 @@ func main() {
     dnsname := *openapiclient.NewDnsname("DnsnameName_example") // Dnsname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateDnsname(context.Background(), dnsnameId).Dnsname(dnsname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateDnsname(context.Background(), dnsnameId).Dnsname(dnsname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateDnsname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4739,8 +4739,8 @@ func main() {
     domain := *openapiclient.NewDomain("DomainName_example") // Domain |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateDomain(context.Background(), domainId).Domain(domain).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateDomain(context.Background(), domainId).Domain(domain).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateDomain``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4811,8 +4811,8 @@ func main() {
     domainuser := *openapiclient.NewDomainuser("DomainuserName_example", int32(123)) // Domainuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateDomainuser(context.Background(), domainuserId).Domainuser(domainuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateDomainuser(context.Background(), domainuserId).Domainuser(domainuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateDomainuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4883,8 +4883,8 @@ func main() {
     headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateHeadline``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4955,8 +4955,8 @@ func main() {
     ip := *openapiclient.NewIp("IpIp_example") // Ip |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateIp(context.Background(), ipId).Ip(ip).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateIp(context.Background(), ipId).Ip(ip).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateIp``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5027,8 +5027,8 @@ func main() {
     location := *openapiclient.NewLocation("LocationName_example") // Location |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateLocation(context.Background(), locationId).Location(location).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateLocation(context.Background(), locationId).Location(location).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateLocation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5099,8 +5099,8 @@ func main() {
     note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateNote(context.Background(), noteId).Note(note).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateNote(context.Background(), noteId).Note(note).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateNote``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5171,8 +5171,8 @@ func main() {
     os := *openapiclient.NewOs("OsName_example") // Os |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateOs(context.Background(), osId).Os(os).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateOs(context.Background(), osId).Os(os).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateOs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5243,8 +5243,8 @@ func main() {
     osarch := *openapiclient.NewOsarch("OsarchName_example") // Osarch |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateOsarch(context.Background(), osarchId).Osarch(osarch).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateOsarch(context.Background(), osarchId).Osarch(osarch).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateOsarch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5315,8 +5315,8 @@ func main() {
     reason := *openapiclient.NewReason("ReasonName_example") // Reason |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateReason(context.Background(), reasonId).Reason(reason).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateReason(context.Background(), reasonId).Reason(reason).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateReason``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5387,8 +5387,8 @@ func main() {
     recommendation := *openapiclient.NewRecommendation("RecommendationName_example") // Recommendation |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateRecommendation(context.Background(), recommendationId).Recommendation(recommendation).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateRecommendation(context.Background(), recommendationId).Recommendation(recommendation).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateRecommendation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5459,8 +5459,8 @@ func main() {
     reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateReportitem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5531,8 +5531,8 @@ func main() {
     serviceprovider := *openapiclient.NewServiceprovider("ServiceproviderName_example") // Serviceprovider |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateServiceprovider(context.Background(), serviceproviderId).Serviceprovider(serviceprovider).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateServiceprovider(context.Background(), serviceproviderId).Serviceprovider(serviceprovider).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateServiceprovider``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5603,8 +5603,8 @@ func main() {
     system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateSystem(context.Background(), systemId).System(system).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateSystem(context.Background(), systemId).System(system).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateSystem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5675,8 +5675,8 @@ func main() {
     systemtype := *openapiclient.NewSystemtype("SystemtypeName_example") // Systemtype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateSystemtype(context.Background(), systemtypeId).Systemtype(systemtype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateSystemtype(context.Background(), systemtypeId).Systemtype(systemtype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateSystemtype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5747,8 +5747,8 @@ func main() {
     systemuser := *openapiclient.NewSystemuser("SystemuserName_example", int32(123)) // Systemuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateSystemuser(context.Background(), systemuserId).Systemuser(systemuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateSystemuser(context.Background(), systemuserId).Systemuser(systemuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateSystemuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5819,8 +5819,8 @@ func main() {
     tag := *openapiclient.NewTag("TagName_example", int32(123)) // Tag |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateTag(context.Background(), tagId).Tag(tag).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateTag(context.Background(), tagId).Tag(tag).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateTag``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5891,8 +5891,8 @@ func main() {
     task := *openapiclient.NewTask(int32(123), int32(123), int32(123), int32(123), int32(123)) // Task |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateTask(context.Background(), taskId).Task(task).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateTask(context.Background(), taskId).Task(task).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5963,8 +5963,8 @@ func main() {
     taskname := *openapiclient.NewTaskname("TasknameName_example") // Taskname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.PartialUpdateTaskname(context.Background(), tasknameId).Taskname(taskname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.PartialUpdateTaskname(context.Background(), tasknameId).Taskname(taskname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.PartialUpdateTaskname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6034,8 +6034,8 @@ func main() {
     analysisstatusId := "analysisstatusId_example" // string | A unique integer value identifying this analysisstatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveAnalysisstatus(context.Background(), analysisstatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveAnalysisstatus(context.Background(), analysisstatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveAnalysisstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6104,8 +6104,8 @@ func main() {
     artifactId := "artifactId_example" // string | A unique integer value identifying this artifact.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveArtifact(context.Background(), artifactId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveArtifact(context.Background(), artifactId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveArtifact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6174,8 +6174,8 @@ func main() {
     artifactpriorityId := "artifactpriorityId_example" // string | A unique integer value identifying this artifactpriority.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveArtifactpriority(context.Background(), artifactpriorityId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveArtifactpriority(context.Background(), artifactpriorityId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveArtifactpriority``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6244,8 +6244,8 @@ func main() {
     artifactstatusId := "artifactstatusId_example" // string | A unique integer value identifying this artifactstatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveArtifactstatus(context.Background(), artifactstatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveArtifactstatus(context.Background(), artifactstatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveArtifactstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6314,8 +6314,8 @@ func main() {
     artifacttypeId := "artifacttypeId_example" // string | A unique integer value identifying this artifacttype.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveArtifacttype(context.Background(), artifacttypeId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveArtifacttype(context.Background(), artifacttypeId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveArtifacttype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6384,8 +6384,8 @@ func main() {
     caseId := "caseId_example" // string | A unique integer value identifying this case.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveCase(context.Background(), caseId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveCase(context.Background(), caseId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCase``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6454,8 +6454,8 @@ func main() {
     casepriorityId := "casepriorityId_example" // string | A unique integer value identifying this casepriority.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveCasepriority(context.Background(), casepriorityId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveCasepriority(context.Background(), casepriorityId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasepriority``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6524,8 +6524,8 @@ func main() {
     casestatusId := "casestatusId_example" // string | A unique integer value identifying this casestatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveCasestatus(context.Background(), casestatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveCasestatus(context.Background(), casestatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasestatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6594,8 +6594,8 @@ func main() {
     casetypeId := "casetypeId_example" // string | A unique integer value identifying this casetype.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveCasetype(context.Background(), casetypeId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveCasetype(context.Background(), casetypeId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCasetype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6664,8 +6664,8 @@ func main() {
     companyId := "companyId_example" // string | A unique integer value identifying this company.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveCompany(context.Background(), companyId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveCompany(context.Background(), companyId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6734,8 +6734,8 @@ func main() {
     contactId := "contactId_example" // string | A unique integer value identifying this contact.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveContact(context.Background(), contactId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveContact(context.Background(), contactId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveContact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6804,8 +6804,8 @@ func main() {
     divisionId := "divisionId_example" // string | A unique integer value identifying this division.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveDivision(context.Background(), divisionId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveDivision(context.Background(), divisionId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveDivision``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6874,8 +6874,8 @@ func main() {
     dnsnameId := "dnsnameId_example" // string | A unique integer value identifying this dnsname.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveDnsname(context.Background(), dnsnameId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveDnsname(context.Background(), dnsnameId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveDnsname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6944,8 +6944,8 @@ func main() {
     domainId := "domainId_example" // string | A unique integer value identifying this domain.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveDomain(context.Background(), domainId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveDomain(context.Background(), domainId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveDomain``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7014,8 +7014,8 @@ func main() {
     domainuserId := "domainuserId_example" // string | A unique integer value identifying this domainuser.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveDomainuser(context.Background(), domainuserId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveDomainuser(context.Background(), domainuserId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveDomainuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7084,8 +7084,8 @@ func main() {
     headlineId := "headlineId_example" // string | A unique integer value identifying this headline.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveHeadline(context.Background(), headlineId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveHeadline(context.Background(), headlineId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveHeadline``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7154,8 +7154,8 @@ func main() {
     ipId := "ipId_example" // string | A unique integer value identifying this ip.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveIp(context.Background(), ipId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveIp(context.Background(), ipId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveIp``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7224,8 +7224,8 @@ func main() {
     locationId := "locationId_example" // string | A unique integer value identifying this location.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveLocation(context.Background(), locationId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveLocation(context.Background(), locationId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveLocation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7294,8 +7294,8 @@ func main() {
     noteId := "noteId_example" // string | A unique integer value identifying this note.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveNote(context.Background(), noteId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveNote(context.Background(), noteId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveNote``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7364,8 +7364,8 @@ func main() {
     notestatusId := "notestatusId_example" // string | A unique integer value identifying this notestatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveNotestatus(context.Background(), notestatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveNotestatus(context.Background(), notestatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveNotestatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7434,8 +7434,8 @@ func main() {
     osId := "osId_example" // string | A unique integer value identifying this os.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveOs(context.Background(), osId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveOs(context.Background(), osId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveOs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7504,8 +7504,8 @@ func main() {
     osarchId := "osarchId_example" // string | A unique integer value identifying this osarch.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveOsarch(context.Background(), osarchId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveOsarch(context.Background(), osarchId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveOsarch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7574,8 +7574,8 @@ func main() {
     reasonId := "reasonId_example" // string | A unique integer value identifying this reason.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveReason(context.Background(), reasonId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveReason(context.Background(), reasonId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveReason``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7644,8 +7644,8 @@ func main() {
     recommendationId := "recommendationId_example" // string | A unique integer value identifying this recommendation.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveRecommendation(context.Background(), recommendationId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveRecommendation(context.Background(), recommendationId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveRecommendation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7714,8 +7714,8 @@ func main() {
     reportitemId := "reportitemId_example" // string | A unique integer value identifying this reportitem.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveReportitem(context.Background(), reportitemId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveReportitem(context.Background(), reportitemId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveReportitem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7784,8 +7784,8 @@ func main() {
     serviceproviderId := "serviceproviderId_example" // string | A unique integer value identifying this serviceprovider.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveServiceprovider(context.Background(), serviceproviderId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveServiceprovider(context.Background(), serviceproviderId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveServiceprovider``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7854,8 +7854,8 @@ func main() {
     systemId := "systemId_example" // string | A unique integer value identifying this system.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveSystem(context.Background(), systemId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveSystem(context.Background(), systemId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveSystem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7924,8 +7924,8 @@ func main() {
     systemstatusId := "systemstatusId_example" // string | A unique integer value identifying this systemstatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveSystemstatus(context.Background(), systemstatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveSystemstatus(context.Background(), systemstatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveSystemstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7994,8 +7994,8 @@ func main() {
     systemtypeId := "systemtypeId_example" // string | A unique integer value identifying this systemtype.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveSystemtype(context.Background(), systemtypeId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveSystemtype(context.Background(), systemtypeId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveSystemtype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8064,8 +8064,8 @@ func main() {
     systemuserId := "systemuserId_example" // string | A unique integer value identifying this systemuser.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveSystemuser(context.Background(), systemuserId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveSystemuser(context.Background(), systemuserId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveSystemuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8134,8 +8134,8 @@ func main() {
     tagId := "tagId_example" // string | A unique integer value identifying this tag.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTag(context.Background(), tagId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTag(context.Background(), tagId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTag``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8204,8 +8204,8 @@ func main() {
     tagcolorId := "tagcolorId_example" // string | A unique integer value identifying this tagcolor.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTagcolor(context.Background(), tagcolorId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTagcolor(context.Background(), tagcolorId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTagcolor``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8274,8 +8274,8 @@ func main() {
     taskId := "taskId_example" // string | A unique integer value identifying this task.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTask(context.Background(), taskId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTask(context.Background(), taskId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8344,8 +8344,8 @@ func main() {
     tasknameId := "tasknameId_example" // string | A unique integer value identifying this taskname.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTaskname(context.Background(), tasknameId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTaskname(context.Background(), tasknameId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTaskname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8414,8 +8414,8 @@ func main() {
     taskpriorityId := "taskpriorityId_example" // string | A unique integer value identifying this taskpriority.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTaskpriority(context.Background(), taskpriorityId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTaskpriority(context.Background(), taskpriorityId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTaskpriority``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8484,8 +8484,8 @@ func main() {
     taskstatusId := "taskstatusId_example" // string | A unique integer value identifying this taskstatus.
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.RetrieveTaskstatus(context.Background(), taskstatusId).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.RetrieveTaskstatus(context.Background(), taskstatusId).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.RetrieveTaskstatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8555,8 +8555,8 @@ func main() {
     artifact := *openapiclient.NewArtifact("ArtifactName_example", int32(123), int32(123), int32(123), int32(123)) // Artifact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateArtifact(context.Background(), artifactId).Artifact(artifact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateArtifact(context.Background(), artifactId).Artifact(artifact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateArtifact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8627,8 +8627,8 @@ func main() {
     artifacttype := *openapiclient.NewArtifacttype("ArtifacttypeName_example") // Artifacttype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateArtifacttype(context.Background(), artifacttypeId).Artifacttype(artifacttype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateArtifacttype(context.Background(), artifacttypeId).Artifacttype(artifacttype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateArtifacttype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8699,8 +8699,8 @@ func main() {
     case_ := *openapiclient.NewCase("CaseName_example", false, int32(123)) // Case |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateCase(context.Background(), caseId).Case_(case_).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateCase(context.Background(), caseId).Case_(case_).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateCase``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8771,8 +8771,8 @@ func main() {
     casetype := *openapiclient.NewCasetype("CasetypeName_example") // Casetype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateCasetype(context.Background(), casetypeId).Casetype(casetype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateCasetype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8843,8 +8843,8 @@ func main() {
     company := *openapiclient.NewCompany("CompanyName_example") // Company |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateCompany(context.Background(), companyId).Company(company).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateCompany(context.Background(), companyId).Company(company).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8915,8 +8915,8 @@ func main() {
     contact := *openapiclient.NewContact("ContactName_example", "ContactEmail_example") // Contact |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateContact(context.Background(), contactId).Contact(contact).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateContact(context.Background(), contactId).Contact(contact).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateContact``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8987,8 +8987,8 @@ func main() {
     division := *openapiclient.NewDivision("DivisionName_example") // Division |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateDivision(context.Background(), divisionId).Division(division).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateDivision(context.Background(), divisionId).Division(division).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateDivision``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9059,8 +9059,8 @@ func main() {
     dnsname := *openapiclient.NewDnsname("DnsnameName_example") // Dnsname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateDnsname(context.Background(), dnsnameId).Dnsname(dnsname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateDnsname(context.Background(), dnsnameId).Dnsname(dnsname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateDnsname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9131,8 +9131,8 @@ func main() {
     domain := *openapiclient.NewDomain("DomainName_example") // Domain |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateDomain(context.Background(), domainId).Domain(domain).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateDomain(context.Background(), domainId).Domain(domain).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateDomain``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9203,8 +9203,8 @@ func main() {
     domainuser := *openapiclient.NewDomainuser("DomainuserName_example", int32(123)) // Domainuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateDomainuser(context.Background(), domainuserId).Domainuser(domainuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateDomainuser(context.Background(), domainuserId).Domainuser(domainuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateDomainuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9275,8 +9275,8 @@ func main() {
     headline := *openapiclient.NewHeadline("HeadlineName_example") // Headline |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateHeadline(context.Background(), headlineId).Headline(headline).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateHeadline``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9347,8 +9347,8 @@ func main() {
     ip := *openapiclient.NewIp("IpIp_example") // Ip |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateIp(context.Background(), ipId).Ip(ip).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateIp(context.Background(), ipId).Ip(ip).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateIp``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9419,8 +9419,8 @@ func main() {
     location := *openapiclient.NewLocation("LocationName_example") // Location |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateLocation(context.Background(), locationId).Location(location).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateLocation(context.Background(), locationId).Location(location).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateLocation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9491,8 +9491,8 @@ func main() {
     note := *openapiclient.NewNote("NoteTitle_example", "NoteContent_example", int32(123), int32(123), int32(123)) // Note |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateNote(context.Background(), noteId).Note(note).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateNote(context.Background(), noteId).Note(note).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateNote``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9563,8 +9563,8 @@ func main() {
     os := *openapiclient.NewOs("OsName_example") // Os |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateOs(context.Background(), osId).Os(os).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateOs(context.Background(), osId).Os(os).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateOs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9635,8 +9635,8 @@ func main() {
     osarch := *openapiclient.NewOsarch("OsarchName_example") // Osarch |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateOsarch(context.Background(), osarchId).Osarch(osarch).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateOsarch(context.Background(), osarchId).Osarch(osarch).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateOsarch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9707,8 +9707,8 @@ func main() {
     reason := *openapiclient.NewReason("ReasonName_example") // Reason |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateReason(context.Background(), reasonId).Reason(reason).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateReason(context.Background(), reasonId).Reason(reason).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateReason``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9779,8 +9779,8 @@ func main() {
     recommendation := *openapiclient.NewRecommendation("RecommendationName_example") // Recommendation |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateRecommendation(context.Background(), recommendationId).Recommendation(recommendation).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateRecommendation(context.Background(), recommendationId).Recommendation(recommendation).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateRecommendation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9851,8 +9851,8 @@ func main() {
     reportitem := *openapiclient.NewReportitem(int32(123), int32(123), "ReportitemSubheadline_example", "ReportitemNote_example", int32(123), int32(123)) // Reportitem |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateReportitem(context.Background(), reportitemId).Reportitem(reportitem).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateReportitem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9923,8 +9923,8 @@ func main() {
     serviceprovider := *openapiclient.NewServiceprovider("ServiceproviderName_example") // Serviceprovider |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateServiceprovider(context.Background(), serviceproviderId).Serviceprovider(serviceprovider).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateServiceprovider(context.Background(), serviceproviderId).Serviceprovider(serviceprovider).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateServiceprovider``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9995,8 +9995,8 @@ func main() {
     system := *openapiclient.NewSystem("SystemName_example", int32(123), int32(123), int32(123)) // System |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateSystem(context.Background(), systemId).System(system).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateSystem(context.Background(), systemId).System(system).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateSystem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10067,8 +10067,8 @@ func main() {
     systemtype := *openapiclient.NewSystemtype("SystemtypeName_example") // Systemtype |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateSystemtype(context.Background(), systemtypeId).Systemtype(systemtype).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateSystemtype(context.Background(), systemtypeId).Systemtype(systemtype).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateSystemtype``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10139,8 +10139,8 @@ func main() {
     systemuser := *openapiclient.NewSystemuser("SystemuserName_example", int32(123)) // Systemuser |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateSystemuser(context.Background(), systemuserId).Systemuser(systemuser).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateSystemuser(context.Background(), systemuserId).Systemuser(systemuser).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateSystemuser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10211,8 +10211,8 @@ func main() {
     tag := *openapiclient.NewTag("TagName_example", int32(123)) // Tag |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateTag(context.Background(), tagId).Tag(tag).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateTag(context.Background(), tagId).Tag(tag).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateTag``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10283,8 +10283,8 @@ func main() {
     task := *openapiclient.NewTask(int32(123), int32(123), int32(123), int32(123), int32(123)) // Task |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateTask(context.Background(), taskId).Task(task).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateTask(context.Background(), taskId).Task(task).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10355,8 +10355,8 @@ func main() {
     taskname := *openapiclient.NewTaskname("TasknameName_example") // Taskname |  (optional)
 
     configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
-    resp, r, err := api_client.ApiApi.UpdateTaskname(context.Background(), tasknameId).Taskname(taskname).Execute()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ApiApi.UpdateTaskname(context.Background(), tasknameId).Taskname(taskname).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ApiApi.UpdateTaskname``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)

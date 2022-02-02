@@ -2,7 +2,7 @@ openapi: 3.0.2
 info:
   description: OpenAPI 3 - Documentation of DFIRTrack API
   title: DFIRTrack
-  version: v2.0.0
+  version: v2.4.1
 servers:
 - url: /
 security:
@@ -3557,6 +3557,7 @@ components:
         artifact_acquisition_time: 2000-01-23T04:56:07.000+00:00
         artifact_name: artifact_name
         artifact_modified_by_user_id: 3
+        artifact_assigned_to_user_id: 2
         tag:
         - 7
         - 7
@@ -3629,6 +3630,9 @@ components:
           type: string
         artifact_modified_by_user_id:
           type: integer
+        artifact_assigned_to_user_id:
+          nullable: true
+          type: integer
       required:
       - artifact_created_by_user_id
       - artifact_modified_by_user_id
@@ -3687,7 +3691,7 @@ components:
           readOnly: true
           type: integer
         analysisstatus_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - analysisstatus_name
@@ -3698,6 +3702,7 @@ components:
         case_modify_time: 2000-01-23T04:56:07.000+00:00
         case_id_external: case_id_external
         case_name: case_name
+        case_assigned_to_user_id: 9
         case_end_time: 2000-01-23T04:56:07.000+00:00
         case_is_incident: true
         casepriority: 6
@@ -3715,11 +3720,11 @@ components:
           readOnly: true
           type: integer
         case_id_external:
-          maxLength: 50
+          maxLength: 255
           nullable: true
           type: string
         case_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         casepriority:
           type: integer
@@ -3755,6 +3760,9 @@ components:
           format: date-time
           readOnly: true
           type: string
+        case_assigned_to_user_id:
+          nullable: true
+          type: integer
       required:
       - case_created_by_user_id
       - case_is_incident
@@ -3812,7 +3820,7 @@ components:
           readOnly: true
           type: integer
         company_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         division:
           nullable: true
@@ -3831,13 +3839,13 @@ components:
           readOnly: true
           type: integer
         contact_name:
-          maxLength: 100
+          maxLength: 255
           type: string
         contact_email:
-          maxLength: 100
+          maxLength: 255
           type: string
         contact_phone:
-          maxLength: 50
+          maxLength: 255
           nullable: true
           type: string
       required:
@@ -3853,7 +3861,7 @@ components:
           readOnly: true
           type: integer
         division_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - division_name
@@ -3868,7 +3876,7 @@ components:
           readOnly: true
           type: integer
         dnsname_name:
-          maxLength: 100
+          maxLength: 255
           type: string
         domain:
           nullable: true
@@ -3885,7 +3893,7 @@ components:
           readOnly: true
           type: integer
         domain_name:
-          maxLength: 100
+          maxLength: 255
           type: string
       required:
       - domain_name
@@ -3901,7 +3909,7 @@ components:
           readOnly: true
           type: integer
         domainuser_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         domain:
           type: integer
@@ -3921,7 +3929,7 @@ components:
           readOnly: true
           type: integer
         headline_name:
-          maxLength: 100
+          maxLength: 255
           type: string
       required:
       - headline_name
@@ -3948,7 +3956,7 @@ components:
           readOnly: true
           type: integer
         location_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - location_name
@@ -3960,6 +3968,7 @@ components:
         note_version: 441289069
         note_create_time: 2000-01-23T04:56:07.000+00:00
         note_modified_by_user_id: 7
+        note_assigned_to_user_id: 9
         notestatus: 5
         note_title: note_title
         note_modify_time: 2000-01-23T04:56:07.000+00:00
@@ -3973,7 +3982,7 @@ components:
           readOnly: true
           type: integer
         note_title:
-          maxLength: 250
+          maxLength: 255
           type: string
         note_content:
           type: string
@@ -4002,6 +4011,9 @@ components:
           type: string
         note_modified_by_user_id:
           type: integer
+        note_assigned_to_user_id:
+          nullable: true
+          type: integer
       required:
       - note_content
       - note_created_by_user_id
@@ -4018,7 +4030,7 @@ components:
           readOnly: true
           type: integer
         notestatus_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - notestatus_name
@@ -4032,7 +4044,7 @@ components:
           readOnly: true
           type: integer
         os_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - os_name
@@ -4046,7 +4058,7 @@ components:
           readOnly: true
           type: integer
         osarch_name:
-          maxLength: 10
+          maxLength: 255
           type: string
       required:
       - osarch_name
@@ -4060,7 +4072,7 @@ components:
           readOnly: true
           type: integer
         reason_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - reason_name
@@ -4074,7 +4086,7 @@ components:
           readOnly: true
           type: integer
         recommendation_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - recommendation_name
@@ -4083,12 +4095,13 @@ components:
       example:
         notestatus: 5
         reportitem_created_by_user_id: 7
-        system: 5
         reportitem_note: reportitem_note
-        reportitem_create_time: 2000-01-23T04:56:07.000+00:00
         reportitem_id: 0
         reportitem_modify_time: 2000-01-23T04:56:07.000+00:00
         reportitem_modified_by_user_id: 9
+        system: 5
+        reportitem_create_time: 2000-01-23T04:56:07.000+00:00
+        reportitem_assigned_to_user_id: 3
         tag:
         - 2
         - 2
@@ -4113,7 +4126,7 @@ components:
             type: integer
           type: array
         reportitem_subheadline:
-          maxLength: 100
+          maxLength: 255
           nullable: true
           type: string
         reportitem_note:
@@ -4129,6 +4142,9 @@ components:
           readOnly: true
           type: string
         reportitem_modified_by_user_id:
+          type: integer
+        reportitem_assigned_to_user_id:
+          nullable: true
           type: integer
       required:
       - headline
@@ -4147,7 +4163,7 @@ components:
           readOnly: true
           type: integer
         serviceprovider_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - serviceprovider_name
@@ -4167,6 +4183,7 @@ components:
         system_lastbooted_time: 2000-01-23T04:56:07.000+00:00
         contact: 6
         dnsname: 1
+        system_assigned_to_user_id: 9
         company:
         - 1
         - 1
@@ -4200,7 +4217,7 @@ components:
           readOnly: true
           type: string
         system_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         domain:
           nullable: true
@@ -4279,6 +4296,9 @@ components:
           type: string
         system_modified_by_user_id:
           type: integer
+        system_assigned_to_user_id:
+          nullable: true
+          type: integer
         system_export_markdown:
           type: boolean
         system_export_spreadsheet:
@@ -4298,7 +4318,7 @@ components:
           readOnly: true
           type: integer
         systemstatus_name:
-          maxLength: 30
+          maxLength: 255
           type: string
       required:
       - systemstatus_name
@@ -4312,7 +4332,7 @@ components:
           readOnly: true
           type: integer
         systemtype_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - systemtype_name
@@ -4329,7 +4349,7 @@ components:
           readOnly: true
           type: integer
         systemuser_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         system:
           type: integer
@@ -4348,15 +4368,19 @@ components:
       example:
         tag_name: tag_name
         tagcolor: 6
+        tag_assigned_to_user_id: 1
         tag_id: 0
       properties:
         tag_id:
           readOnly: true
           type: integer
         tag_name:
-          maxLength: 50
+          maxLength: 255
           type: string
         tagcolor:
+          type: integer
+        tag_assigned_to_user_id:
+          nullable: true
           type: integer
       required:
       - tag_name
@@ -4471,7 +4495,7 @@ components:
           readOnly: true
           type: integer
         taskname_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - taskname_name
@@ -4485,7 +4509,7 @@ components:
           readOnly: true
           type: integer
         taskpriority_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - taskpriority_name
@@ -4499,7 +4523,7 @@ components:
           readOnly: true
           type: integer
         taskstatus_name:
-          maxLength: 50
+          maxLength: 255
           type: string
       required:
       - taskstatus_name

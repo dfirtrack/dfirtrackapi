@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **ArtifactCreatedByUserId** | **int32** |  | 
 **ArtifactModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **ArtifactModifiedByUserId** | **int32** |  | 
+**ArtifactAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -589,6 +590,41 @@ and a boolean to check if the value has been set.
 SetArtifactModifiedByUserId sets ArtifactModifiedByUserId field to given value.
 
 
+### GetArtifactAssignedToUserId
+
+`func (o *Artifact) GetArtifactAssignedToUserId() int32`
+
+GetArtifactAssignedToUserId returns the ArtifactAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetArtifactAssignedToUserIdOk
+
+`func (o *Artifact) GetArtifactAssignedToUserIdOk() (*int32, bool)`
+
+GetArtifactAssignedToUserIdOk returns a tuple with the ArtifactAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetArtifactAssignedToUserId
+
+`func (o *Artifact) SetArtifactAssignedToUserId(v int32)`
+
+SetArtifactAssignedToUserId sets ArtifactAssignedToUserId field to given value.
+
+### HasArtifactAssignedToUserId
+
+`func (o *Artifact) HasArtifactAssignedToUserId() bool`
+
+HasArtifactAssignedToUserId returns a boolean if a field has been set.
+
+### SetArtifactAssignedToUserIdNil
+
+`func (o *Artifact) SetArtifactAssignedToUserIdNil(b bool)`
+
+ SetArtifactAssignedToUserIdNil sets the value for ArtifactAssignedToUserId to be an explicit nil
+
+### UnsetArtifactAssignedToUserId
+`func (o *Artifact) UnsetArtifactAssignedToUserId()`
+
+UnsetArtifactAssignedToUserId ensures that no value is present for ArtifactAssignedToUserId, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

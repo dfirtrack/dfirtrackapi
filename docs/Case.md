@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **CaseCreateTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **CaseModifiedByUserId** | Pointer to **NullableInt32** |  | [optional] 
 **CaseModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
+**CaseAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -423,6 +424,41 @@ SetCaseModifyTime sets CaseModifyTime field to given value.
 
 HasCaseModifyTime returns a boolean if a field has been set.
 
+### GetCaseAssignedToUserId
+
+`func (o *Case) GetCaseAssignedToUserId() int32`
+
+GetCaseAssignedToUserId returns the CaseAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetCaseAssignedToUserIdOk
+
+`func (o *Case) GetCaseAssignedToUserIdOk() (*int32, bool)`
+
+GetCaseAssignedToUserIdOk returns a tuple with the CaseAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCaseAssignedToUserId
+
+`func (o *Case) SetCaseAssignedToUserId(v int32)`
+
+SetCaseAssignedToUserId sets CaseAssignedToUserId field to given value.
+
+### HasCaseAssignedToUserId
+
+`func (o *Case) HasCaseAssignedToUserId() bool`
+
+HasCaseAssignedToUserId returns a boolean if a field has been set.
+
+### SetCaseAssignedToUserIdNil
+
+`func (o *Case) SetCaseAssignedToUserIdNil(b bool)`
+
+ SetCaseAssignedToUserIdNil sets the value for CaseAssignedToUserId to be an explicit nil
+
+### UnsetCaseAssignedToUserId
+`func (o *Case) UnsetCaseAssignedToUserId()`
+
+UnsetCaseAssignedToUserId ensures that no value is present for CaseAssignedToUserId, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

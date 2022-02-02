@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **TagId** | Pointer to **int32** |  | [optional] [readonly] 
 **TagName** | **string** |  | 
 **Tagcolor** | **int32** |  | 
+**TagAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -92,6 +93,41 @@ and a boolean to check if the value has been set.
 SetTagcolor sets Tagcolor field to given value.
 
 
+### GetTagAssignedToUserId
+
+`func (o *Tag) GetTagAssignedToUserId() int32`
+
+GetTagAssignedToUserId returns the TagAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetTagAssignedToUserIdOk
+
+`func (o *Tag) GetTagAssignedToUserIdOk() (*int32, bool)`
+
+GetTagAssignedToUserIdOk returns a tuple with the TagAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTagAssignedToUserId
+
+`func (o *Tag) SetTagAssignedToUserId(v int32)`
+
+SetTagAssignedToUserId sets TagAssignedToUserId field to given value.
+
+### HasTagAssignedToUserId
+
+`func (o *Tag) HasTagAssignedToUserId() bool`
+
+HasTagAssignedToUserId returns a boolean if a field has been set.
+
+### SetTagAssignedToUserIdNil
+
+`func (o *Tag) SetTagAssignedToUserIdNil(b bool)`
+
+ SetTagAssignedToUserIdNil sets the value for TagAssignedToUserId to be an explicit nil
+
+### UnsetTagAssignedToUserId
+`func (o *Tag) UnsetTagAssignedToUserId()`
+
+UnsetTagAssignedToUserId ensures that no value is present for TagAssignedToUserId, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

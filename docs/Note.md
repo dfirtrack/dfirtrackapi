@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **NoteCreatedByUserId** | **int32** |  | 
 **NoteModifyTime** | Pointer to **time.Time** |  | [optional] [readonly] 
 **NoteModifiedByUserId** | **int32** |  | 
+**NoteAssignedToUserId** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -295,6 +296,41 @@ and a boolean to check if the value has been set.
 SetNoteModifiedByUserId sets NoteModifiedByUserId field to given value.
 
 
+### GetNoteAssignedToUserId
+
+`func (o *Note) GetNoteAssignedToUserId() int32`
+
+GetNoteAssignedToUserId returns the NoteAssignedToUserId field if non-nil, zero value otherwise.
+
+### GetNoteAssignedToUserIdOk
+
+`func (o *Note) GetNoteAssignedToUserIdOk() (*int32, bool)`
+
+GetNoteAssignedToUserIdOk returns a tuple with the NoteAssignedToUserId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNoteAssignedToUserId
+
+`func (o *Note) SetNoteAssignedToUserId(v int32)`
+
+SetNoteAssignedToUserId sets NoteAssignedToUserId field to given value.
+
+### HasNoteAssignedToUserId
+
+`func (o *Note) HasNoteAssignedToUserId() bool`
+
+HasNoteAssignedToUserId returns a boolean if a field has been set.
+
+### SetNoteAssignedToUserIdNil
+
+`func (o *Note) SetNoteAssignedToUserIdNil(b bool)`
+
+ SetNoteAssignedToUserIdNil sets the value for NoteAssignedToUserId to be an explicit nil
+
+### UnsetNoteAssignedToUserId
+`func (o *Note) UnsetNoteAssignedToUserId()`
+
+UnsetNoteAssignedToUserId ensures that no value is present for NoteAssignedToUserId, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
